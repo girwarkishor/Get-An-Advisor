@@ -1,0 +1,49 @@
+/*===================fonts========================*/
+@font-face {
+	font-family: 'PFEncoreSansPro-Regular';
+	src: url(../fonts/PFEncoreSansPro-Regular.eot);
+	src: url(../fonts/PFEncoreSansPro-Regular.woff2) format('woff2'), url(../fonts/PFEncoreSansPro-Regular.woff) format('woff'), url(../fonts/PFEncoreSansPro-Regular.ttf) format('truetype'), url(../fonts/PFEncoreSansPro-Regular.eot?#iefix) format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFHandbookPro-Regular';
+	src: url(../fonts/PFHandbookPro-Regular.woff) format('woff'), url(../fonts/PFHandbookPro-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFHandbookPro-Bold';
+	src: url(../fonts/PFHandbookPro-Bold.eot);
+	src: url(../fonts/PFHandbookPro-Bold.woff2) format('woff2'), url(../fonts/PFHandbookPro-Bold.woff) format('woff'), url(../fonts/PFHandbookPro-Bold.ttf) format('truetype'), url(../fonts/PFHandbookPro-Bold.eot?#iefix) format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PFHandbookPro-Light';
+	src: url(../fonts/PFHandbookPro-Light.eot);
+	src: url(../fonts/PFHandbookPro-Light.woff2) format('woff2'), url(../fonts/PFHandbookPro-Light.woff) format('woff'), url(../fonts/PFHandbookPro-Light.ttf) format('truetype'), url(../fonts/PFHandbookPro-Light.svg#PFHandbookPro-Light) format('svg'), url(../fonts/PFHandbookPro-Light.eot?#iefix) format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icon-font';
+	src: url(../fonts/icon-font.eot);
+	src: url(../fonts/icon-font.woff2) format('woff2'), url(../fonts/icon-font.eot?#iefix) format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'untitled-font-13';
+	src: url(../fonts/untitled-font-13.woff) format('woff'), url(../fonts/untitled-font-13.ttf) format('truetype'), url(../fonts/untitled-font-13.svg#untitled-font-13) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*
+
+PFHandbookPro-Light.svg#PFHandbookPro-Light
+untitled-font-13
+
+ */

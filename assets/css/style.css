@@ -1,0 +1,5438 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'PFHandbookPro-Regular';
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1270px !important;
+    /*max-width: 1370px !important;
+	padding: 0px !important;*/
+}
+
+/*New Fonts Start*/
+
+@font-face {
+  font-family: 'pf_handbook_proregular';
+  src: url("../font/pfhandbookpro-regular.eot");
+  src: url("../font/pfhandbookpro-regular.eot?#iefix") format("embedded-opentype"), url("../font/pfhandbookpro-regular.woff2") format("woff2"), url("../font/pfhandbookpro-regular.woff") format("woff"), url("../font/pfhandbookpro-regular.svg#pf_handbook_proregular") format("svg");
+  font-weight: 400 !important;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pf_handbook_probold';
+  src: url("../font/pfhandbookpro-bold.eot");
+  src: url("../font/pfhandbookpro-bold.eot?#iefix") format("embedded-opentype"), url("../font/pfhandbookpro-bold.woff2") format("woff2"), url("../font/pfhandbookpro-bold.woff") format("woff"), url("../font/pfhandbookpro-bold.svg#pf_handbook_probold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pf_handbook_prolight';
+  src: url("../font/pfhandbookpro-light.eot");
+  src: url("../font/pfhandbookpro-light.eot?#iefix") format("embedded-opentype"), url("../font/pfhandbookpro-light.woff2") format("woff2"), url("../font/pfhandbookpro-light.woff") format("woff"), url("../font/pfhandbookpro-light.svg#pf_handbook_probold") format("svg");
+  font-weight: 300 !important;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pf_handbookpro_promedium';
+  src: url("../font/pfhandbookpro-medium.eot");
+  src: url("../font/pfhandbookpro-medium.eot?#iefix") format("embedded-opentype"), url("../font/pfhandbookpro-medium.woff2") format("woff2"), url("../font/pfhandbookpro-medium.woff") format("woff"), url("../font/pfhandbookpro-medium.svg#pf_handbook_probold") format("svg");
+  font-weight: 500 !important;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pf_encore_sans_probold';
+  src: url("../font/pfencoresanspro-bold.eot");
+  src: url("../font/pfencoresanspro-bold.eot?#iefix") format("embedded-opentype"), url("../font/pfencoresanspro-bold.woff2") format("woff2"), url("../font/pfencoresanspro-bold.woff") format("woff"), url("../font/pfencoresanspro-bold.svg#pf_encore_sans_probold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pf_encore_sans_proregular';
+  src: url("../font/pfencoresanspro-reg.eot");
+  src: url("../font/pfencoresanspro-reg.eot?#iefix") format("embedded-opentype"), url("../font/pfencoresanspro-reg.woff2") format("woff2"), url("../font/pfencoresanspro-reg.woff") format("woff"), url("../font/pfencoresanspro-reg.svg#pf_encore_sans_proregular") format("svg");
+  font-weight: 400 !important;
+  font-style: normal; }
+
+/*New Fonts End*/
+
+/* ******** fonts start *************/
+
+/*===================fonts========================*/
+@font-face {
+    font-family: 'PFEncoreSansPro';
+    src: url(../fonts/PFEncoreSansPro-Regular.eot);
+    src: url(../fonts/PFEncoreSansPro-Regular.woff2) format('woff2'), url(../fonts/PFEncoreSansPro-Regular.woff) format('woff'), url(../fonts/PFEncoreSansPro-Regular.ttf) format('truetype'), url(../fonts/PFEncoreSansPro-Regular.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFEncoreSansPro';
+    src: url(../fonts/PFEncoreSansPro-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFHandbookPro-Regular';
+    src: url(../fonts/PFHandbookPro-Regular.woff) format('woff'), url(../fonts/PFHandbookPro-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFHandbookPro-Bold';
+    src: url(../fonts/PFHandbookPro-Bold.eot);
+    src: url(../fonts/PFHandbookPro-Bold.woff2) format('woff2'), url(../fonts/PFHandbookPro-Bold.woff) format('woff'), url(../fonts/PFHandbookPro-Bold.ttf) format('truetype'), url(../fonts/PFHandbookPro-Bold.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFHandbookPro-Light';
+    src: url(../fonts/PFHandbookPro-Light.eot);
+    src: url(../fonts/PFHandbookPro-Light.woff2) format('woff2'), url(../fonts/PFHandbookPro-Light.woff) format('woff'), url(../fonts/PFHandbookPro-Light.ttf) format('truetype'), url(../fonts/PFHandbookPro-Light.svg#PFHandbookPro-Light) format('svg'), url(../fonts/PFHandbookPro-Light.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icon-font';
+    src: url(../fonts/icon-font.eot);
+    src: url(../fonts/icon-font.woff2) format('woff2'), url(../fonts/icon-font.eot?#iefix) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'untitled-font-13';
+    src: url(../fonts/untitled-font-13.woff) format('woff'), url(../fonts/untitled-font-13.ttf) format('truetype'), url(../fonts/untitled-font-13.svg#untitled-font-13) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.abcicons:before,
+.abcicons:before {
+    font-family: 'untitled-font-13';
+    content: attr(data-icon);
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 13px;
+}
+
+.icon-icon-alert:before {
+    content: "\61";
+}
+
+.icon-icon-arrow-left:before {
+    content: "\62";
+}
+
+.icon-icon-arrow-right:before {
+    content: "\63";
+}
+
+.icon-icon-chevron-down:before {
+    content: "\64";
+}
+
+.icon-icon-close:before {
+    content: "\66";
+}
+
+.icon-icon-facebook:before {
+    content: "\67";
+}
+
+.icon-icon-info:before {
+    content: "\68";
+}
+
+.icon-icon-login:before {
+    content: "\69";
+}
+
+.icon-icon-menu:before {
+    content: "\6a";
+}
+
+.icon-icon-minus:before {
+    content: "\6b";
+}
+
+.icon-icon-notification:before {
+    content: "\6c";
+}
+
+.icon-icon-password-hidden:before {
+    content: "\6d";
+}
+
+.icon-icon-youtube:before {
+    content: "\6e";
+}
+
+.icon-icon-wishlist:before {
+    content: "\6f";
+}
+
+.icon-icon-whatsapp:before {
+    content: "\70";
+}
+
+.icon-icon-twitter:before {
+    content: "\71";
+}
+
+.icon-icon-tick:before {
+    content: "\72";
+}
+
+.icon-icon-search:before {
+    content: "\73";
+}
+
+.icon-icon-plus:before {
+    content: "\74";
+}
+
+.icon-icon-password-visible:before {
+    content: "\75";
+}
+
+.icon-icon-phone:before {
+    content: "\76";
+}
+
+.icon-icon-bullet:before {
+    content: "\77";
+}
+
+.icon-large-chevron-right:before {
+    content: "\78";
+}
+
+.icon-large-chevron-left:before {
+    content: "\79";
+}
+
+
+
+/* ********** fonts end ************/
+ul {
+    padding: 0px;
+    margin: 0px !important;
+    list-style-type: none;
+}
+
+.wrapper {
+    padding: 0px 47.5px;
+}
+
+.topmenu ul>li>a {
+	color: #000000 !important;
+    font-family: 'pf_handbook_proregular';
+    font-size: 18px;
+    line-height: 16px;
+    padding: 10px 0px;
+/*
+    color: #000000;
+    padding: 0 8px;
+    font-size: 14px;
+    font-family: 'PFHandbookPro-Regular';
+    text-decoration: none;
+*/
+/*    border-right: 2px solid #000;*/
+}
+
+.topmenu ul>li>a::after{
+	content: "|";
+    padding: 0 8px;
+    color: #000;
+    width: 2px;
+    height: 14px;
+    font-size: 15px;
+}
+
+.topmenu ul>li:last-of-type>a::after{
+	content: "";
+    padding: 0px;
+}
+
+.topmenu ul>li {
+    float: left;
+}
+
+/*Changes New Addition*/
+.main-menu .custom-sub-nav .nav-item {
+    padding: 0px 0px !important; 
+}
+.main-menu a {
+	color: #FFF;
+    font-family: 'pf_handbook_proregular';
+    word-wrap: break-word;
+    font-weight: normal;
+	
+/*    font-family: 'PFHandbookPro-Regular';*/
+    font-size: 18px;
+    line-height: normal;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    display: block;
+    padding: 9px 16px 8px 16px;
+    text-decoration: none !important;
+}
+.main-menu .bottomMenu .dropdown-menu {
+    margin-top: -5px;
+    padding: 8px 0;
+    will-change: transform;
+    width: 224px;
+    left: auto !important;
+    border-radius: 0px;
+    top: 0px !important;
+    border-top: 0;
+}
+.main-menu a:hover{
+    cursor: pointer;
+}
+
+.main-menu a[aria-expanded="true"] {
+    background: #F2F3F6;
+    color: #000!important;
+}
+
+.main-menu .dropdown-menu {
+    margin-top: -5px; 
+    padding: 8px 0;
+    will-change: transform;
+    width: 224px;
+    left: auto !important;
+    border-radius: 0px;
+    top: 0px !important; 
+    border-top: 0;
+}
+.main-menu .dropdown-menu a {
+    color: #000 !important;
+    padding: 6px 15px;
+    font-family: 'PFHandbookPro-Regular', sans-serif !important;
+    font-size: 16px;
+    white-space: inherit;
+    position: relative;
+}
+.cust-log-ico-mob img{
+	margin-top: -9px;
+    padding-left: 0px;
+    margin-right: 4px;
+}
+
+/******** mobile Others toggling ****/
+.mob-others.ico-drop:after {
+  color: #000 !important; }
+
+.mob-others {
+  text-decoration: none !important; }
+
+.ico-drop:after {
+  font-family: "icon-font" !important;
+  content: "\64";
+  color: #000;
+  padding-left: 8px;
+  font-size: 15px;
+  text-transform: none;
+  text-decoration: none; }
+
+.mob-others.open.ico-drop:after {
+  content: "\65";
+  color: #000; }
+
+.othersToggle {
+    display: none;
+    padding-left: 24px !important;
+}
+
+.othersToggle li a {
+    font-size: 18px !important;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    color: #444749;
+}
+
+/*Changes New Addition*/
+
+.middleMenu a.nav-link {
+    color: #fff !important;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-size: 18px;
+    font-family: 'PFHandbookPro-Regular';
+    border-bottom: 1px solid #c7222a;
+    padding: 0 0 1px 0;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.middleMenu {
+    width: 100%;
+    background: #C7222A;
+    float: left;
+    padding: 0 28px;
+}
+
+.middleMenu ul.navbar-nav {
+    padding-top: 48px;
+}
+
+.middleMenu a.navbar-brand img {
+    width: 194px;
+    height: 45px;
+    margin: 8px 56px 7px auto;
+}
+
+.protectionDetail:nth-child(odd) {
+    background: #fff;
+}
+
+.login {
+    margin-left: auto;
+    margin-top: 48px;
+}
+
+.topmenu ul>li:last-child a {
+    border: 0px;
+}
+
+.topmenu {
+    width: 100%;
+    float: left;
+    padding: 5px 25px;
+}
+
+/*h3 {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 26px !important;
+    color: #ffffff !important;
+    padding: 9px 0 0;
+}*/
+h3 {
+    text-align: center;
+    font-size: 32px !important;
+    color: #252525 !important;
+
+    font-family: 'PFHandbookPro-Bold' !important;
+    padding: 9px 0 0;
+}
+
+ul.menu>li {
+    float: left;
+    padding-right: 0px;
+}
+
+.tagling {
+    width: 100%;
+    float: left;
+    background: #6a4742;
+    color: #fff;
+}
+
+ul.menu.mobileDrop {
+    padding-left: 15px;
+}
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link.active img.hideImage {
+    display: inline-block;
+}
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link.active img.showImage {
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    float: left;
+}
+
+
+.tagling p {
+    margin: 0px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 110px;
+    font-family: 'PFHandbookPro-Regular';
+}
+
+.col-lg-9 .our_plans_main ul.nav.nav-tabs li.nav-item a {
+    border-right: 1px solid #dee2e6;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+	border-right: 1px solid #dee2e6;
+	border:0px;
+}
+
+.bottomMenu {
+    width: 100%;
+    float: left;
+    background: #da9089;
+    max-height: 48px;
+}
+
+.bottomMenu h3 {
+    margin-left: 97px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 26px !important;
+    color: #ffffff !important;
+    padding: 9px 0 0;
+
+}
+
+.bottomMenu a#navbardrop {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.login.dropdown a {
+    color: #fff !important;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-size: 18px;
+    font-family: 'PFHandbookPro-Regular';
+    border-bottom: 1px solid #c7222a;
+    padding: 0 0 4px 0;
+}
+
+.bottomMenu a {
+    color: #fff;
+    font-family: 'PFHandbookPro-Regular';
+    /*font-size: 18px;*/ /*DP4428 - Commented for Register Menu*/
+    line-height: normal;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    display: block;
+    padding: 14px 16px 13px;
+    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.pay.dropdown {
+    text-align: right;
+    width: 136px;
+    float: right;
+    margin-right: 10px;
+}
+
+.bottomMenu a:hover i {
+    color: #c7222a;
+}
+
+.bottomMenu a:hover,
+.bottomMenu a[aria-expanded="true"] {
+    background: #F2F3F6;
+    color: #000;
+}
+
+.menu li a i {
+    position: relative;
+    top: 1px;
+    left: 6px;
+}
+
+a.know-more:hover {
+    text-decoration: underline !important;
+}
+
+/*a.primaryButton:hover {
+    background: #8c151b;
+}*/
+a.meetadvisor.active:hover {
+    background: #8c151b;
+}
+
+.underline {
+    position: absolute;
+    height: 77px;
+    width: 2px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.pay.dropdown a::after {
+    display: none;
+}
+
+.pay.dropdown i {
+    position: relative;
+    top: 1px;
+}
+
+.our_services {
+    width: 100%;
+    float: left;
+    padding: 46px 50px;
+}
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link:hover {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link {
+    height: 130px;
+    color: #555555;
+    background-color: #fff;
+    cursor: default;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link.active {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+    top: 1px;
+    position: relative;
+}
+
+.servinceContent ul.nav.nav-tabs>li>a.nav-link p {
+    margin-right: 2px;
+    line-height: 1.428571429;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-family: "PFHandbookPro-Regular";
+    font-size: 18px;
+}
+
+.servinceContent ul.nav.nav-tabs>li {
+    width: 16%;
+    margin: 0px;
+}
+
+.servinceContent .tab-content p {
+    margin-bottom: 10px;
+}
+
+.servinceContent h4 {
+    margin: 0px 0 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "PFHandbookPro-Bold";
+}
+
+.servinceContent .tab-content p {
+    margin-bottom: 10px;
+}
+
+.servinceContent .tab-content {
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+    margin-top: 20px;
+}
+
+.row.protectionDetail p {
+    margin: 0px !important;
+}
+
+.row.protectionDetail p {
+    padding: 8px;
+    line-height: 1.428571429;
+}
+
+.row.protectionDetail a {
+    background: transparent;
+    font-size: 14px;
+    font-family: "PFHandbookPro-Regular";
+    color: #000;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.protectionDetailPadding {
+    padding: 0px;
+}
+
+.row.protectionDetail p {
+    padding: 8px;
+    line-height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    float: left;
+    width: calc(100% - 10px);
+}
+
+.footerTop ul>li>a:hover {
+    color: #fff !important;
+}
+
+.row.protectionDetail i {
+    font-size: 8px;
+    color: #ca2023;
+    float: left;
+    position: relative;
+    top: 18px;
+}
+
+.row.protectionDetail.bg-white {
+    background: #fff;
+}
+
+a.know {
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: #c8232a !important;
+    color: #fff !important;
+    padding: 6px 0px;
+    width: 134px !important;
+    display: block;
+    text-align: center;
+}
+
+.row.protectionDetail {
+    margin: 0px;
+    background: #f9f9f9;
+}
+
+.row.protectionDetail {
+    margin: 0px;
+    background: #f9f9f9;
+    font-family: "PFHandbookPro-Regular";
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding: 2px 20px 7px;
+}
+
+.row.protectionDetail a {
+    background: transparent;
+    font-size: 14px;
+    font-family: "PFHandbookPro-Regular";
+    color: #000;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 0px;
+}
+
+a.meetadvisor {
+    font-family: "PFHandbookPro-Regular";
+    border: 1px solid #c52530;
+    color: #c52530 !important;
+    border-radius: 2px;
+    text-transform: uppercase;
+    width: 134px;
+    display: block;
+    text-align: center;
+    padding: 4px 0px;
+    height: 34px;
+}
+
+a.meetadvisor.active {
+    background-color: #c8232a;
+    color: #fff !important;
+}
+
+a.meetadvisor img {
+    padding-left: 6px;
+    vertical-align: middle;
+}
+
+.attention {
+    width: 100%;
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    float: left;
+}
+
+.footerTop {
+    width: 100%;
+    float: left;
+    background: #201e19;
+    padding: 40px 20px 20px;
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    font-family: 'PFEncoreSansPro', sans-serif;
+    line-height: 1.428571429;
+    margin-bottom: 35px;
+}
+
+
+.footer h5,
+.footer h5 a {
+    color: #a1a2a2 !important;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-size: 18px !important;
+    font-family: 'PFEncoreSansPro', sans-serif !important;
+}
+
+.footer h5 a:hover {
+    color: #fff !important;
+}
+
+/*
+ul.social_icons {
+    border-left: 1px solid #2e2e2d;
+    padding: 20px 0 41px 10px;
+    position: absolute;
+    top: -11px;
+    left: 3px;
+}
+*/
+.footerTop ul>li {
+    padding: 3px 0px;
+}
+
+.footerTop ul>li>a {
+    font-size: 15px;
+    color: #7f7e7f !important;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.beware {
+    width: 100%;
+    float: left;
+    color: #7f7e7f;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-image: none;
+}
+
+.moreDeatils {
+    color: #7f7e7f;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.row.footerMidlde {
+    margin-top: 42px;
+}
+
+.footerBottom {
+    width: 100%;
+    float: left;
+    background: #6c7174;
+    padding: 40px 20px;
+}
+
+.contacttext.float-left {
+    margin-left: 32px;
+}
+
+ul.social_icons>li>a {
+    background: none;
+    color: #929292;
+    line-height: 30px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
+    background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+}
+
+ul.social_icons>li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 6px;
+}
+
+ul.social_icons>li>a.facebook:hover {
+    background: #3B5998;
+    color: #fff !important;
+}
+
+ul.social_icons>li>a.twitter:hover {
+    background-color: #4099ff;
+    color: #fff !important;
+}
+
+ul.bottomLink>li>a {
+    color: #fff;
+    line-height: 28px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.row.footerMidlde {
+    margin-top: 42px;
+
+}
+
+.moreDeatils {
+    color: #7f7e7f;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+.row.borderLine p {
+    border-top: 1px solid #CDCECE;
+    margin-top: 40px;
+}
+
+.row.copyright p {
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contacttext.float-left {
+    margin-left: 32px;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.socIcon.float-right ul>li {
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.socIcon.float-right ul>li>a {
+    color: #fff;
+    color: #fff;
+    font-size: 22px;
+}
+
+.track {
+    width: 100%;
+    float: left;
+    margin-top: 52px;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #fccb05;
+    padding: 10px 0px 0px;
+}
+
+track img {
+    float: right;
+
+}
+
+.dailyNav {
+    color: #333333;
+    float: left;
+    width: 100%;
+}
+
+.dailyNav button {
+    color: #333333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    width: 100%;
+    border: 0px;
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+    padding: 4px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border: 1px solid #ddd;
+    text-align: left;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+.important_link {
+    width: 100%;
+    float: left;
+    margin-top: 137px;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    padding: 15px 17px;
+    border-radius: 4px;
+}
+
+.track .collapse {
+    padding: 19px 10px;
+    background: transparent;
+    border: 1px solid #ddd;
+}
+
+.our_services.left_main .col-sm-12.col-md-12.col-lg-9 {
+    padding-right: 46px;
+}
+
+.track a {
+    color: #6c7f85 !important;
+    text-decoration: none;
+    outline: 0 !important;
+    font-size: 15px;
+}
+
+a.primaryButton {
+    font-size: 14px;
+    font-family: "PFHandbookPro-Regular";
+    color: #fff !important;
+    text-decoration: none !important;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 7px 9px;
+    background: #6A4742;
+    width: 122px;
+    text-align: center;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.dailyNav a.primaryButton {
+    margin-top: 5px;
+}
+
+.rightSide h2,
+.rightSide h1 {
+    font-size: 24px !important;
+    margin-top: 5px;
+
+    font-family: "PFHandbookPro-Regular" !important;
+}
+
+.article .rightSide ul.nav.nav-tabs {
+    background: #fff;
+    height: auto !important;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/*.rightSide ul.nav.nav-tabs>li.nav-item a.nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff !important;
+    background: transparent !important;
+    border-bottom: 2px solid;
+}*/
+
+.tab-pane {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.rightSide p {
+    margin: 0px;
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+}
+
+.outside {
+    width: 100%;
+    margin-top: 10px;
+}
+
+p.between {
+    margin-top: 10px;
+}
+
+.outside p {
+    line-height: 20px;
+}
+
+.rightSide i {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #404141;
+}
+
+.rightSide strong {
+    font-weight: 500;
+    font-family: "PFHandbookPro-Regular";
+    font-size: 18px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.faq_home p {
+    font-family: PFEncoreSansPro;
+}
+
+.rightSide .nav-link img {
+    float: left;
+}
+
+.rightSide a.nav-link {
+    float: left;
+    width: auto !important;
+    padding: 10px 12px !important;
+}
+
+.rightSide li.nav-item {
+    float: left;
+    width: 70px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #eeeeee #dee2e6;
+    border-bottom-color: #fff;
+
+}
+
+.rightSide a.primaryButton {
+    margin-top: 13px;
+}
+
+.rightSide a.nav-link {
+    color: #6c7f85;
+    text-decoration: none;
+    outline: 0 !important;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 1px;
+}
+
+.rightSide .form-group {
+    margin-bottom: 0px;
+    width: 100%;
+    float: left;
+}
+
+.rightSide form label {
+    margin: 0px;
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+    margin-left: 10px;
+    font-size: 18px;
+    float: left;
+    width: calc(100% - 25px);
+}
+
+img.hideImage {
+    display: none;
+}
+
+.attention {
+    width: 100%;
+    float: left;
+    padding: 25px 15px 5px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.middleMenu nav.navbar.navbar-expand-lg.navbar-dark {
+    padding-right: 0px;
+    padding-left: 0;
+}
+
+.bottomMenu .dropdown-menu a {
+    color: #000 !important;
+    padding: 6px 15px;
+    font-family: 'PFHandbookPro-Regular', sans-serif !important;
+    font-size: 16px;
+    white-space: inherit;
+    position: relative;
+}
+
+.bottomMenu .dropdown-menu {
+/*    margin-top: -5px;*/
+    padding: 8px 0;
+    will-change: transform;
+    width: 224px;
+    left: auto !important;
+    border-radius: 0px;
+	/*Girwar Changes*/
+    /*top: 0px !important;*/
+	/*Girwar Changes*/
+    border-top: 0;
+}
+
+.dropdown-toggle[aria-expanded="true"] i {
+    transform: rotateZ(180deg);
+    color: #c7222a;
+}
+
+.bottomMenu .dropdown-menu .dropdown-menu {
+    transform: translateX(-99%) !important;
+    top: 0px !important;
+}
+
+.bottomMenu .more-submenu>a>i.fa {
+    color: #c7222a;
+    position: absolute;
+    right: 10px !important;
+    padding: 0;
+    top: 7px;
+    width: 10px;
+    left: auto;
+}
+
+.pay .dropdown-menu {
+    right: -22px;
+/*    top: 5px; girwar changes*/
+}
+
+.bottomMenu .dropdown-menu a:hover {
+    background: #f2f3f6;
+}
+
+.login.dropdown a:hover {
+
+    border: 0px !important;
+    text-decoration: none !important;
+}
+
+/*Changes*/
+
+.middleMenu li.nav-item a:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Changes*/
+
+.middleMenu li.nav-item.active:hover {
+    border: 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+
+    padding-bottom: 5px;
+}
+
+.middleMenu .nav-item {
+    padding: 0px 20px !important;
+}
+
+.servinceContent .nav-tabs {
+    width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************GUIDELINES FOLLOWING START**************/
+
+
+a.logo {
+    float: left;
+    margin: 25px 0;
+}
+
+.main-menu>.navbar-nav {
+    display: inline-block;
+    float: left;
+    padding-top: 45px !important;
+    margin-left: 100px !important;
+}
+
+.main-menu {
+    float: left;
+}
+
+.middleMenu .nav-item {
+    float: left;
+}
+
+.login-btn {
+    float: right;
+}
+
+.login-btn {
+    float: right;
+    color: #fff;
+    font-family: 'pf_handbook_proregular';
+    font-size: 18px;
+    margin-top: 52px;
+}
+
+.login-btn>p {
+    float: left;
+    margin-bottom: 0;
+}
+
+.line {
+    float: left;
+    width: 100%;
+    background: #fff;
+    height: 2px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+
+.toggle-btn.active .line-1 {
+    transform: rotate(42deg);
+    transform-origin: left;
+}
+
+.toggle-btn.active .line-2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toggle-btn.active .line-3 {
+    transform: rotate(-45deg) translateY(-17px) translateX(6px);
+    transform-origin: right;
+}
+
+.toggle-nav {
+    width: 30px;
+    background: transparent;
+    float: right;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.toggle-btn.active .toggle-nav {
+    transform: rotate(180deg) translateY(5px);
+}
+
+.disclaimer_top .features_plans .features_column {
+    width: 100%;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 21px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    position: relative;
+    padding-top: 30px;
+}
+
+
+.hide-me-mob {
+    display: inline-block;
+}
+
+.hide-me-web {
+    display: none;
+}
+
+
+.rightSide form input[type="radio"] {
+    float: left;
+    position: relative;
+    top: 7px;
+}
+
+/************GUIDELINES FOLLOWING ENDED**************/
+
+/******* css add start ************* */
+.rightSide .nav-link img.hide_icon {
+    display: none;
+}
+
+ul.content-absli {
+    color: #717171;
+    line-height: 24px;
+    font-family: 'PFEncoreSansPro';
+    list-style-type:initial;
+    margin-bottom: 25px !important;
+    padding-left: 25px;
+
+}
+
+.rightSide a.nav-link.active.show img.show_icon {
+    display: none;
+}
+
+.rightSide a.nav-link.active.show img.hide_icon {
+    display: inline-block;
+}
+
+h2,
+h1 {
+    font-size: 32px !important;
+    color: #252525 !important;
+    font-family: 'PFHandbookPro-Bold' !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.disclaimer_top button {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 16px 30px;
+    border: 0px;
+    border-left: 10px solid #6D4243;
+    border-top-left-radius: 4px;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.disclaimer_top p,
+.disclaimer_top ul li {
+    font-size: 18px;
+    color: #717171;
+    line-height: 24px;
+    font-family: 'PFEncoreSansPro';
+}
+
+.disclaimer_top ul {
+    margin-bottom: 25px !important;
+    padding-left: 25px;
+}
+
+.disclaimer_top ul li {
+    list-style-type: initial;
+}
+
+.disclaimer_top {
+    width: 100%;
+    float: left;
+}
+
+.bg_primary {
+    background: #f7f7f7;
+}
+
+.disclaimer_top button h2,
+.disclaimer_top button h1 {
+    display: inline-block;
+    margin: 0px;
+    font-size: 24px !important;
+}
+
+.tab-content {
+    float: left;
+    width: 100%;
+}
+
+.disclaimer_top button {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 16px 30px;
+    border: 0px;
+    border-left: 10px solid #6D4243;
+    border-top-left-radius: 4px;
+    border-right: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.disclaimer_top button i.fa {
+    float: right;
+    padding-top: 10px;
+    color: #252525 !important;
+}
+
+.our_services.main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.our_services.left_main .container {
+    padding: 0px;
+}
+
+.features_row button.owl-prev {
+    background: url(../images/prev.png) no-repeat !important;
+    width: 48px;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0px !important;
+}
+
+.article_full_row .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+}
+
+.row.owl-carousel.article_slider {
+    margin: 0;
+}
+
+.features_row .owl-nav.disabled {
+    display: block !important;
+}
+
+.features_row {
+    width: 100%;
+    float: left;
+}
+
+.insurance_left .features_row .content.features_slider {
+    padding-right: 19px;
+    padding-left: 35px;
+    padding-top: 20px;
+}
+
+.insurance_left a.iconBg {
+    right: -12px;
+    position: relative;
+    top: -1px;
+}
+
+.features_row button.owl-next {
+    background: url(../images/next.png) no-repeat !important;
+    width: 48px;
+    height: 70px;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0px !important;
+}
+
+.disclaimer_top button .fa:before {
+    content: "\f077";
+}
+
+.disclaimer_top [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f078";
+}
+
+.buyButton {
+    font-size: 14px;
+    font-family: "PFHandbookPro-Regular";
+    color: #fff !important;
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 9px 35px 7px 15px;
+    background: url(../images/Arrow-Right.png) no-repeat #ca2023;
+    text-align: left;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-position: 93%;
+    line-height: normal;
+    height: 33px;
+}
+
+.iconBg {
+    background: url(../images/icon_bg.png) no-repeat;
+    font-size: 18px;
+    float: right;
+    display: block;
+    /* width: 100%; */
+    text-align: right;
+    background-position: 100% 100%;
+    padding: 5px 1px 12px;
+    font-family: 'PFHandbookPro-Regular';
+    color: #fff !important;
+    padding-right: 26px;
+    padding-left: 23px;
+    /* max-width: 156px; */
+    text-align: center;
+}
+
+.callButton {
+    width: 100%;
+    float: left;
+    padding-bottom: 13px;
+}
+
+.features_row .content {
+    padding: 36px 0px;
+}
+
+h5 {
+    color: #252525 !important;
+    font-size: 24px !important;
+    font-family: 'PFHandbookPro-Bold' !important;
+}
+
+.features_row .features_column>p {
+    font-size: 16px;
+    color: #252525;
+    padding: 0px 28px;
+    line-height: 27px;
+    padding-top: 10px;
+    font-family: 'PFHandbookPro-Regular' !important;
+}
+
+.features_row .features_column {
+    width: 93%;
+    float: left;
+    border: 1px solid #F3F3F3;
+    padding-bottom: 31px;
+    border-radius: 4px;
+
+    text-align: center;
+}
+
+.disclaimer_top.our_plans {
+    margin-top: 44px;
+}
+
+.content {
+    width: 100%;
+    float: left;
+}
+
+a.know_more {
+    font-size: 15px;
+    color: #252525 !important;
+    font-family: 'PFHandbookPro-Bold' !important;
+    background: url(../images/arrow-black.png) no-repeat;
+    background-position: 109%;
+    padding-right: 10p;
+    padding-right: 17px;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.primaryButton {
+    background: #6a4742;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0px;
+    text-align: left;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-family: 'PFHandbookPro-Regular';
+    margin-bottom: 10px;
+}
+
+.track button.primaryButton {
+    width: 100%;
+}
+
+.track button.primaryButton img {
+    float: right;
+}
+
+.important_link {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+}
+
+/*button.bg_primary .fa:before {
+    content: "/f078";
+}*/
+
+
+
+/*button.collapsed .fa:before{
+content: "\f068";
+}*/
+
+/* other important link css start */
+/*.important_link {
+    width: 100%;
+    float: left;
+    margin-top: 111px;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    padding: 15px 17px;
+}*/
+
+.disclaimer_top.important_link button.bg_primary {
+    font-size: 24px;
+    color: #252525;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 0px;
+    padding: 0px;
+    font-family: 'PFHandbookPro-Regular';
+}
+
+.our_services.left_main .col-lg-3 {
+    padding-left: 0px;
+}
+
+.disclaimer_top.important_link button.bg_primary i.fa {
+    font-size: 15px;
+    display: inline;
+    width: auto;
+}
+
+.important_link .content {
+    padding: 0px 0px;
+    border: 0px;
+}
+
+.important_link .content i {
+    display: inline;
+    vertical-align: middle;
+    width: auto;
+    float: right;
+    color: #6A4742;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.disclaimer_top.important_link button.bg_primary i.fa {
+    font-size: 15px;
+    display: inline;
+    width: auto;
+}
+
+.disclaimer_top button i.fa {
+    float: right;
+    padding-top: 10px;
+    color: #252525 !important;
+}
+
+.important_link .content a {
+    /* background: url(../images/border_left.png) no-repeat left top; */
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid #DDDDDD;
+    color: #252525;
+    font-size: 18px;
+    font-family: 'PFHandbookPro-Regular';
+    margin-top: 12px;
+    /* border-left: 16px solid #6a4742; */
+    /* background-size: auto 100%; */
+    padding-left: 34px;
+    position: relative;
+}
+
+img.absolute-img {
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    height: calc(100% + 5px);
+    max-width: 25px;
+}
+
+.our_services.main.term-proctection .bg_primary .content {
+    padding: 0;
+}
+
+/*.important_link {
+    width: 100%;
+    float: left;
+    margin-top: 140px;
+    background: #F7F7F7;
+    border: 1px solid #DDDDDD;
+    padding: 15px 17px;
+}*/
+.dailyNav p a {
+    color: #6c7f85;
+    text-decoration: none;
+    outline: 0 !important;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+div#dailynav {
+    border: 1px solid #ddd;
+    border-top: 0px;
+    padding: 0px 14px;
+}
+
+.insurance_plans a {
+    background: #6a4742;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    color: #fff !important;
+    padding: 7px;
+    border-radius: 4px;
+    font-family: 'PFHandbookPro-Regular';
+    margin-top: 31px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.insurance_plans a img,
+.faq>a>img {
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    top: 0px;
+}
+
+.plansDescription p {
+    color: #717171;
+    font-family: 'PFEncoreSansPro';
+}
+
+.form input:focus {
+    box-shadow: none !important;
+    border-color: #ddd;
+    background: #f9f9f9;
+}
+
+.insurance_plans {
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    background: #F7F7F7;
+    padding: 20px 17px 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.rightSide>.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #fff !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+}
+
+.mobile_category_main {
+    display: none;
+}
+
+.how_help.help_mobile {
+    display: none;
+}
+
+.insurance_plans p {
+    font-family: 'PFHandbookPro-Bold';
+    font-size: 20px;
+    padding-top: 6px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px !important;
+    color: #252525 !important;
+    font-family: 'PFHandbookPro-Regular' !important;
+
+}
+
+.insurance_plans h4 {
+    padding-bottom: 25px;
+    font-size: 23px !important;
+}
+
+/* copyright css phone number hide */
+.contacttext.float-left {
+    margin-left: 32px;
+    display: none;
+}
+
+/* side bar faq */
+.faq button img {
+    float: right;
+}
+
+.faq {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    /* border: 1px solid; */
+}
+
+.faq button {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+ul.bottomLink.padding_left {
+    padding-left: 21px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* *************Our Plans Css start************* */
+.our_plans_main {
+    width: 100%;
+    float: left;
+    margin-top: 43px;
+}
+.benefit-heading p strong {
+    font-size: 18px !important;
+}
+.our_plans_main.category_Tab.online_plans ul.nav.nav-tabs.padding-left {
+    padding-left: 0px;
+}
+
+.our_plans_main ul.nav.nav-tabs {
+    border: 0px;
+    background: #F7F7F7;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #dee2e6!important;
+}
+
+.our_plans_main ul.nav.nav-tabs li.nav-item {
+    display: inline-block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 0px;
+    max-height: 52px;
+}
+
+.our_plans_main ul.nav.nav-tabs li.nav-item a {
+    font-size: 24px;
+    font-family: 'PFHandbookPro-Regular';
+    color: #252525 !important;
+    padding: 10px 0px;
+    /* max-height: 55px; */
+    line-height: 33px;
+}
+
+.our_services.main.term-proctection .plansDescription .content {
+    padding: 0;
+}
+
+.our_plans_main .content p strong {
+    font-family: 'PFHandbookPro-Bold';
+    font-size: 24px;
+    color: #252525 !important;
+}
+.our_plans_main .content p b {
+    font-family: 'PFEncoreSansPro';
+    font-size: 16px;
+    color: #252525 !important;
+}
+
+.our_plans_main ul.nav.nav-tabs li.nav-item a.active {
+    border: 0px;
+    background: url(../images/Tab.png) no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 26px;
+    color: #fff !important;
+    border-right: 0px solid #ddd !important;
+}
+
+.our_plans_main {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+.plansDescription .content a.buyButton {
+    background-color: #6a4742;
+}
+
+.plansDescription {
+    width: 100%;
+    float: left;
+    padding: 0px 29px;
+    margin-bottom: 29px;
+}
+
+.plansDescription .content:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plansDescription .content a.buyButton {
+    background-color: #6a4742;
+}
+
+/* *************How Aditya Birla helps? Start************* */
+.how_help {
+    width: 100%;
+    float: left;
+    background: #F7F7F7;
+    padding: 44px 50px;
+    position: relative;
+}
+
+.how_help h3 {
+    text-align: center;
+    font-size: 32px !important;
+    color: #252525 !important;
+    padding-bottom: 43px;
+    font-family: 'PFHandbookPro-Bold';
+}
+
+.how_help .row {
+    margin: 0px;
+    position: relative;
+}
+
+.inner_column {
+    width: 100%;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 999;
+    margin-bottom: 22px;
+}
+
+.caption p strong {
+    font-size: 23px;
+    font-family: 'PFHandbookPro-Bold' !important;
+    color: #252525;
+    padding-top: 34px !important;
+    display: block;
+}
+
+.faq_home .view_all {
+    padding-top: 42px;
+    margin-bottom: 0px;
+}
+
+.caption p {
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #6C7174;
+    line-height: 28px;
+    padding: 0px 53px;
+}
+
+
+.inner_column .figure_images {
+    border-radius: 50%;
+    border: 1px dashed #6A4742;
+    width: 151px;
+    height: 151px;
+    margin: 0px auto;
+    padding: 15px;
+    position: relative;
+    z-index: 999;
+    background: #f7f7f7;
+}
+
+/*.our_plans_main.our_article_tab.artilce_tab_listing {
+    display: none;
+}*/
+.inner_column .figure_images figure {
+    margin: 0px;
+    height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.inner_column .figure_images figure img {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+}
+
+.dotted_line {
+    width: 64%;
+    border: 1px dashed #6A4742;
+    height: 2px;
+    position: absolute;
+    z-index: 999;
+    content: "";
+    top: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner_column .figure_images:hover figure {
+    background: #6A4742;
+}
+
+.inner_column .figure_images:hover figure img.show {
+    display: none;
+}
+
+.inner_column .figure_images:hover figure img.hide_img {
+    display: inline-block;
+}
+
+.inner_column .figure_images figure img.hide_img {
+    display: none;
+}
+
+/* *************How Aditya Birla helps? End************* */
+
+
+/* ************* article start ********* */
+.article .iconBg {
+    background: url(../images/path.png) no-repeat;
+    font-size: 18px;
+    float: right;
+    display: block;
+    /* width: 100%; */
+    text-align: right;
+    background-position: 100% 100%;
+    padding: 5px 1px 11px;
+    font-family: 'PFHandbookPro-Regular';
+    color: #fff;
+    padding-right: 26px;
+    padding-left: 23px;
+    /* max-width: 156px; */
+    text-align: center;
+}
+
+p a.know_more {
+    color: #252525 !important;
+    font-family: 'PFHandbookPro-Bold';
+}
+
+
+.faq_home button#viewmore {
+    border: 0px;
+    padding: 13px 35px 11px 15px;
+    font-size: 18px;
+    width: 235px;
+    background-color: #6d4243;
+    height: 44px;
+}
+
+.figure_Area a.share {
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    line-height: 27px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.figure_Area {
+    width: 100%;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.feat-img-container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+}
+
+.figure_Area .feat-img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    max-height: 120%;
+    max-width: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+.article_caption>p {
+    font-family: 'PFEncoreSansPro';
+    font-size: 18px;
+    color: #717171;
+}
+
+.article_caption a.read_more {
+    color: #6D4243;
+    font-weight: bold;
+}
+
+.BgGrey {
+    background: #f7f7f7;
+}
+
+.article_caption {
+    width: 100%;
+    text-align: left;
+    padding: 23px 30px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+    float: left;
+}
+
+.article_caption p strong {
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 24px;
+    color: #252525;
+}
+
+.article {
+    padding-top: 44px;
+    width: 100%;
+    float: left;
+}
+
+.article_caption a.read_more {
+    color: #6D4243;
+}
+
+.view_detail {
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #ddd;
+    padding-top: 11px;
+}
+
+.view_detail p {
+    display: inline;
+    color: #6C7175;
+    font-size: 14px;
+}
+
+.view_detail p.border-left {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-color: #707070 !important;
+}
+
+.view_all {
+    text-align: center;
+    margin: 1px 0px 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+.view_all a.buyButton {
+    background-color: #6D4243;
+    width: 204px;
+    padding: 13px 20px 11px 20px !important;
+    font-size: 18px;
+    /* padding-left: 10px; */
+    height: 44px;
+}
+
+a.bg_term {
+    background: url(../images/path.png) no-repeat;
+    position: absolute;
+    padding: 0px 20px 15px 7px;
+    font-size: 18px;
+    color: #fff !important;
+    left: -9px;
+    font-family: 'PFHandbookPro-Regular' !important;
+}
+.bg_term span {
+    background: #da9089;
+    float: left;
+    width: 100%;
+    padding: 3px 0px;
+    padding-right: 10px;
+}
+
+.article h3 {
+    padding-bottom: 40px;
+}
+
+.faq_home .view_all a.buyButton {
+    width: 250px !important;
+}
+
+/* ********** article end ********** */
+
+button.btn span {
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+button.btn {
+    color: #252525 !important;
+    font-size: 22px;
+    font-family: 'PFHandbookPro-Regular';
+    text-decoration: none !important;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.faq_home button i {
+    float: right;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.faq_home .card-header {
+    background: transparent;
+    border-radius: 0px !important;
+    border-left: 6px solid #6A4742;
+    padding: 0px !important;
+    border: 0px !important;
+    background: #fff;
+}
+
+.faq_home .card-header {
+    background: transparent;
+    border-radius: 0px !important;
+    border-left: 6px solid #6A4742;
+    padding: 0px !important;
+    border: 0px !important;
+    background: #fff;
+}
+
+.faq_home .collapseButton {
+    border-left: 6px solid #6A4742;
+}
+
+.faq_home .card {
+    border: 0px !important;
+    background: #fff;
+    margin-bottom: 13px;
+}
+
+.faq_home {
+    background: #F7F7F7;
+    width: 100%;
+    float: left;
+    padding: 44px 83px;
+}
+
+.faq_home h3 {
+    padding-bottom: 26px;
+}
+
+.article button.owl-prev {
+    background: url(../images/prev.png) no-repeat !important;
+    width: 48px;
+    height: 70px;
+    /* position: absolute; */
+    /* left: -5%; */
+    /* font-size: 0px !important; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.article button.owl-next {
+    background: url(../images/next.png) no-repeat !important;
+    width: 36px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    /* top: 50%; */
+    /* font-size: 0px !important; */
+    /* transform: translateY(-50%); */
+}
+
+.article_full_row .row.owl-carousel.article_slider {
+    margin: 0;
+    padding: 0 35px;
+    position: unset;
+}
+
+.faq_home .card-body span {
+    font-family: 'PFHandbookPro-Regular';
+    float: left;
+    font-size: 32px;
+    margin-top: -11px;
+    margin-right: 20px;
+}
+
+.figure_Area a.share img {
+    width: 18px;
+    /* margin: 0px !important; */
+    /* padding: 0px !important; */
+    text-align: center;
+    /* padding-top: 0px !important; */
+    /* padding-left: 5px !important; */
+    position: relative;
+    /* left: -3px; */
+    /* top: 1px; */
+    display: inline-block;
+}
+
+.our_services.main.term-proctection a.iconBg {
+    position: relative;
+    right: -11px;
+    top: -2px;
+}
+
+.our_plans_main.our_article_tab .view_all {
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.article .owl-nav.disabled {
+    display: block !important;
+}
+
+/* ************ article end ************ */
+
+/* *********third tab css start********** */
+.challenge {
+    width: 100%;
+    float: left;
+}
+
+.challenge .row {
+    margin: 0px;
+    position: relative;
+}
+
+ul.nav.nav-tabs li {
+    display: inline-block;
+}
+
+
+.column figcaption {
+    margin-top: 80px !important;
+}
+
+section.school.goverment.govermentnopdd {
+    padding-bottom: 0px !important;
+}
+
+.buy_plansTab a.nav-link.active.show {
+    background-image: none !important;
+    /* padding: 0px !important; */
+    border: 0px !important;
+}
+
+/*.column h3 {
+    font-size: 18px;
+    font-family: Proxima-Nova-Bold !important;
+    text-transform: uppercase;
+    position: relative; color: #0a0a0a;
+}*/
+
+.column h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    color: #0a0a0a;
+    margin-left: 63px !important;
+    font-weight: 700;
+}
+
+.column h3 span::after {
+    width: 1px;
+    height: 43px;
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    content: "";
+    top: -54px;
+}
+
+.full_line {
+    width: 63%;
+    position: absolute;
+    top: 70px;
+    background: #6a4742;
+    height: 2px;
+    z-index: 999;
+    left: 197px;
+}
+
+
+
+.buy_plansTab a.nav-link.active.show .icon-service {
+    border: 13px solid #6A4742;
+}
+
+.icon-service {
+    width: 112px;
+    height: 110px;
+    background: #fff;
+    border: 12px solid #DA9089;
+    border-radius: 50%;
+    padding-top: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+}
+
+.circle_border {
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    background: #244454;
+    position: absolute;
+    top: 52px;
+    left: auto;
+    content: "";
+    border-radius: 50%;
+}
+
+.circle_border::after {
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+    left: 3px;
+    top: 2px;
+    border: 4px solid #D7D9DA;
+}
+
+.buy_plansTab ul.nav.nav-tabs {
+    background: transparent;
+    position: relative;
+}
+
+.tab_circle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    border: 7px solid #ddd;
+    top: 37px;
+    left: 205px;
+    z-index: 9999;
+}
+
+.buy_plansTab a.nav-link.active.show .tab_circle {
+    border-color: #6a4742 !important;
+}
+
+.column figcaption p.number {
+    font-size: 20px;
+}
+
+.column figcaption p {
+    font-size: 22px;
+    color: #494949;
+    font-family: 'PFHandbookPro-Regular';
+}
+
+.challenge .nav-tabs {
+    border-bottom: 0px !important;
+}
+
+.challenge ul.nav.nav-tabs figcaption h3 span::after {
+    left: 62px;
+}
+
+ul.nav.nav-tabs li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+
+
+.column {
+    width: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.col-lg-3.column-3 .dottedBorder::before {
+    width: 30px;
+    height: 30px;
+    background: #d7d9da;
+    position: absolute;
+    top: -14px;
+    left: 42%;
+    content: "";
+    border-radius: 50%;
+}
+
+.column-3 .dottedBorder::after {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -9px;
+    left: 45%;
+    content: "";
+    border-radius: 50%;
+    border: 3px solid #a6a6a6;
+}
+
+.column-3 .dottedBorder::before {
+    width: 30px;
+    height: 30px;
+    background: #d7d9da;
+    position: absolute;
+    top: -14px;
+    left: 42%;
+    content: "";
+    border-radius: 50%;
+}
+
+.dottedBorder {
+    position: absolute;
+    left: 273px;
+    background: #ddd;
+    height: 3px;
+    width: 145px;
+    top: 76px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.column-3 .dottedBorder::before {
+    width: 30px;
+    height: 30px;
+    background: #d7d9da;
+    position: absolute;
+    top: -14px;
+    left: 42%;
+    content: "";
+    border-radius: 50%;
+}
+
+.faq_home [data-toggle="collapse"] .fa:before {
+    content: "\f077";
+}
+
+.faq_home [data-toggle="collapse"].collapsed .fa:before {
+
+    content: "\f078";
+}
+
+.content {
+    border: 1px solid #DDDDDD;
+    padding: 25px 39px;
+}
+
+.nav-link.active.show .column figcaption p {
+    font-weight: bold;
+}
+
+.buy_plansTab ul.nav.nav-tabs .tab_line {
+    background: #F7F7F7;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 61px;
+    left:10%;
+}
+
+.buy_plansTab ul.nav.nav-tabs li.nav-item:last-child .column:after {
+    display: none;
+}
+
+.call_button {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+/* *********third tab css end********** */
+
+
+/* ********** term proctection css start ********/
+.our_Plans {
+    background: #DA9089;
+    width: 100%;
+    float: left;
+}
+
+.our_Plans p {
+    color: #fff;
+    font-family: 'PFHandbookPro-Regular';
+    font-size: 24px;
+    margin: 10px 22px;
+}
+
+.buy_plansTab ul.nav.nav-tabs {
+    background: transparent;
+}
+
+.buy_plansTab ul.nav.nav-tabs li.nav-item {
+    width: 25%;
+    float: left;
+    margin: 0px !important;
+    max-height: inherit !important;
+}
+
+.features_column p {
+    font-family: 'PFHandbookPro-Regular' !important;
+    font-size: 18px;
+}
+
+.features_plans {
+    width: 100%;
+    float: left;
+}
+
+.features_plans .callButton {
+    padding-bottom: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.features_column p {
+    font-family: 'PFHandbookPro-Regular' !important;
+    font-size: 18px;
+}
+
+.borderedButton {
+    background: url(../images/arrow-red) no-repeat;
+    border: 1px solid #C7222A;
+
+}
+
+.borderedButton {
+    background: url(../images/arrow-red.png) no-repeat;
+    border: 1px solid #C7222A;
+    font-size: 14px;
+    font-family: 'PFHandbookPro-Bold';
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 7px 35px 9px 15px;
+    background-position: 91%;
+    color: #C7222A !important;
+    height: 33px;
+    line-height: normal;
+    border-radius: 2px;
+}
+
+.term-proctection a.nav-link {
+    font-size: 21px !important;
+}
+
+.term-proctection .plansDescription .content:hover {
+    box-shadow: none;
+}
+
+.term-proctection .features_column:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+/* ********** term proctection css End ********/
+
+/* ********** Article Css Start ********/
+.our_article {
+    width: 100%;
+    float: left;
+}
+
+
+.article .view_detail p {
+    padding: 0px !important;
+    font-size: 14px !important;
+}
+
+.article .our_plans_main ul.nav.nav-tabs li.nav-item a {
+    font-size: 22px;
+}
+
+.article .view_detail p.border-left {
+    padding-left: 10px !important;
+}
+
+.article .our_plans_main ul.nav.nav-tabs li.nav-item {
+    width: 20%;
+}
+
+
+.article ul.nav.nav-tabs {
+    background: #fff;
+    border-bottom: 2px solid #DA9089;
+    height: auto !important;
+}
+
+.article .our_plans_main ul.nav.nav-tabs li.nav-item {
+    width: 16.6%;
+    min-height: 77px;
+}
+
+.article .our_plans_main ul.nav.nav-tabs li.nav-item a {
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px !important;
+    max-height: 77px;
+}
+
+.our_services.main.article .our_plans_main {
+    border: 0px;
+    margin-top: 30px;
+}
+
+.article .our_plans_main ul.nav.nav-tabs li.nav-item a.active {
+    background-image: none;
+    background-color: #DA9089;
+}
+
+.our_article .col-sm-12.col-md-4.col-lg-4 {
+    padding: 0px 10px;
+}
+
+/* ********** Article Css Start End ********/
+
+/* ********** Trending Article Start (Article Page) ********/
+.our_services.main.article .insurance_plans {
+    display: none;
+}
+
+.article.trending {
+    background: #F7F7F7;
+
+}
+
+.article.trending {
+    background: #F7F7F7;
+
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.our_services .col-lg-9 {
+    padding-left: 0px;
+}
+
+.article.trending .inner_column {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+.article_full_row {
+    width: 100%;
+    padding: 0px 25px;
+    float: left;
+}
+
+
+.article.trending .article_caption p {
+    font-size: 18px;
+}
+
+.article.trending .article_caption p strong {
+    font-size: 24px;
+}
+
+.article.trending .article_caption {
+
+    border: 0px;
+}
+
+.article.protection .article_full_row {
+    padding: 0;
+    position: relative;
+}
+
+.article_full_row .owl-nav span {
+    display: none;
+}
+
+.our_services.main.article_main .our_plans_main ul.nav.nav-tabs {
+    border-bottom: 1px solid #DA9089;
+    margin-bottom: 27px !important;
+    background: transparent;
+    position: relative;
+    z-index: 99;
+}
+
+.our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item {
+    width: 16.5%;
+    min-height: 62px;
+}
+
+.our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item a {
+    font-size: 22px !important;
+    padding: 5px 17px !important;
+    border-right: 0px !important;
+    line-height: 26px;
+    
+}
+
+.our_services.main.article_main .article_caption>p {
+    font-size: 14px;
+    padding: 0px 14px;
+}
+
+.our_services.main.article_main .article_caption p strong {
+    font-size: 18px;
+    padding-top: 16px !important;
+    display: inline-block;
+}
+
+.our_services.main.article_main .view_detail {
+    padding: 10px 14px;
+
+}
+
+.our_services.main.article_main .view_detail p {
+    font-size: 12px;
+}
+
+.our_services.main.article_main .article_caption {
+    padding: 0px !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+    padding-bottom: 15px !important;
+}
+
+.our_services.main.article_main .our_plans_main {
+    border: 0px;
+}
+
+.our_services.main.article_main .insurance_plans {
+    display: none;
+}
+
+.our_services.main.article_main button.bg_primary {
+    border-top-right-radius: 4px;
+}
+
+.our_services.main.article_main .content {
+    border-bottom-right-radius: 4px;
+}
+
+.our_services.main.article_main .content {
+    border-bottom-left-radius: 4px;
+}
+
+/* ********** Trending Article End (Article Page) ********/
+/* ********** Trending Article End (Article Page) ********/
+.article_category .our_article {
+    margin-top: 30px;
+}
+
+.our_services.main.article_main.article_category .view_all {
+    margin-bottom: 13px;
+}
+
+.our_services.main.article_main.article_category .insurance_plans {
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 14px;
+}
+
+.our_services.main.article_main.article_category .disclaimer_top p {
+    margin-bottom: 0px;
+}
+
+.our_services.main.article_main.article_category .article_caption p strong {
+    padding-bottom: 15px;
+}
+
+.our_services.main.article_main.article_category .article_caption p strong {
+    padding-bottom: 15px;
+}
+
+.our_services.main.article_main.article_category .disclaimer_top p {
+    margin-bottom: 0px;
+}
+
+.our_services.main.article_main.article_category .view_detail {
+    margin-top: 16px;
+}
+
+.our_services.main.article_main.article_category .insurance_plans p {
+    padding-top: 14px;
+}
+
+.article_category .faq {
+    display: none;
+}
+
+
+
+.leftsection .our_article .row {
+    margin: 0px;
+}
+
+.our_services.main.article_main.article_category .insurance_plans h4 {
+    padding-bottom: 21px;
+}
+
+.view_detail p i {
+    padding-left: 6px;
+}
+
+/* ************* article detail css start ************* */
+.left_main .content p {
+    font-family: 'PFEncoreSansPro';
+    font-size: 18px;
+    color: #717171;
+    margin-bottom: 23px;
+}
+
+.left_main {
+    width: 100%;
+    float: left;
+}
+
+.article_heading_area {
+    width: 100%;
+    float: left;
+    background: #F7F7F7;
+    border: 1px solid #ddd;
+    padding-left: 39px;
+    border-bottom: 0px;
+}
+
+.view_detail p.border-left {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-color: #707070 !important;
+}
+
+.article_heading_area .view_detail {
+    border: 0px;
+    padding-top: 0px;
+    padding-bottom: 18px;
+}
+
+.article_detail .view_all {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.term_button a.bg_term {
+    background-size: 100% 100% !important;
+    left: auto;
+    padding: 4px 20px 9px 19px;
+    height: 47px;
+    right: -10px;
+    background: url(../images/articleBg.png) no-repeat;
+    top: -1px;
+}
+
+.article_heading_area h2,
+.article_heading_area h1 {
+    padding-top: 20px;
+}
+
+.term_button {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.left_main .content p strong {
+    color: #252525 !important;
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 22px;
+}
+
+.article_detail a.buyButton {
+    width: 288px;
+}
+
+.article_detail .faq,
+.article_main .faq {
+    display: none;
+}
+
+.article_main .faq {
+    display: none;
+}
+
+
+.article_detail .insurance_plans {
+    margin-top: 24px;
+    padding-bottom: 22px;
+}
+
+.article_detail .insurance_plans p {
+    padding-top: 5px;
+}
+
+.article.trending.detail_slider a.buyButton {
+    width: 220px;
+    background-position: 92%;
+}
+
+.plans_content {
+    width: 100%;
+    display: inline-block;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+.plans_content p {
+    color: #717171;
+    font-size: 18px;
+    font-family: 'PFEncoreSansPro';
+    line-height: 30px;
+}
+
+.buy_plansTab ul.nav.nav-tabs {
+    background: transparent;
+    margin-bottom: 12px !important;
+}
+
+.plans_content a {
+    background-color: #6A4742;
+    width: 155px;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+/* ************* article detail css End ************* */
+
+/* ************* Term Insurance-calculator CSS Start ************* */
+.main.calculator {
+    width: 100%;
+    float: left;
+    margin-top: 46px;
+}
+
+.main.calculator .col-sm-12.col-md-12.col-lg-9 {
+    padding-left: 0px;
+}
+
+.term_insurace {
+    background: #DA9089;
+    width: 100%;
+    display: inline-block;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.term_insurace h3,
+.term_insurace h1 {
+    text-align: left;
+    font-size: 24px !important;
+    color: #fff !important;
+    padding: 10px 39px;
+    margin: 0px;
+}
+
+.step {
+    background: #6D4243;
+    float: left;
+    width: 100%;
+    padding: 2px 0px;
+}
+
+.step>p {
+    font-size: 18px;
+    font-family: 'PFHandbookPro-Bold' !important;
+    text-align: right;
+    color: #fff;
+    padding-right: 40px;
+    margin: 0px;
+}
+
+.step>p span {
+    font-size: 26px;
+    position: relative;
+    top: -4px;
+    padding: 0px 1px;
+}
+
+.form label {
+    color: #000;
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 18px;
+}
+
+.form {
+    width: 100%;
+    float: left;
+}
+
+.input_left {
+    width: 50%;
+    float: left;
+}
+
+.input_left .personImg>img {
+    width: auto;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.rupees {
+    background: url(../images/rupees.png) no-repeat;
+}
+
+.form .row {
+    margin: 25px 0px 0px;
+}
+
+.form input.form-control.rupees {
+    background: url(../images/rupees.png) no-repeat #F9F9F9;
+    background-position: 2%;
+    padding-left: 50px;
+}
+
+.form .form-control {
+    border-radius: 4px !important;
+    border-color: #D0D0D0;
+    background: #F9F9F9;
+    height: 45px;
+    font-family: 'PFHandbookPro-Regular';
+    color: #000;
+    font-size: 18px;
+}
+
+select.form-control {
+    height: 45px !important;
+}
+
+.form .row .col-lg-3 label {
+    padding-top: 8px;
+    /* padding-left: 11px; */
+    line-height: 20px;
+}
+
+.input_left {
+    width: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.input_left .personImg {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #D0D0D0;
+    background: #F9F9F9;
+    padding: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    float: left;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+}
+
+label.input_left {
+    cursor: pointer;
+}
+
+.labelText {
+    width: auto;
+    float: right;
+    padding-top: 10px;
+}
+
+.form label {
+    color: #000;
+    font-family: 'PFHandbookPro-Bold' !important;
+    font-size: 18px;
+}
+
+.main.calculator .col-sm-12.col-md-12.col-lg-8 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-left {
+    padding-left: 40px;
+}
+
+.right_sideBar .content_main {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.right_sideBar .content_main .left_Side {
+    width: 65px;
+    float: left;
+    background: #da9089;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    /* height: 74px; */
+    text-align: center;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 65px;
+}
+
+.right_sideBar .content_main {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.right_sideBar>p.heretext {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.right_sideBar {
+    background: #DA9089;
+    float: left;
+    border-radius: 4px;
+    padding: 28px 25px;
+    padding-right: 10px;
+}
+
+.imgblock {
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    border: 9px solid #da9089;
+    padding: 24px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #6d4243;
+}
+
+.imgblock>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 24px;
+}
+
+.right_Side>p {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 20px;
+    /* height: 57px; */
+    font-family: 'PFEncoreSansPro';
+    padding-right: 10px;
+}
+
+.right_Side {
+    width: calc(100% - 65px);
+    float: right;
+    background: #fff;
+    position: relative;
+    left: -20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-left: 7px;
+}
+
+.right_sideBar>p {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'PFHandbookPro-Regular';
+    line-height: 26px;
+}
+
+.premimum {
+    width: 100%;
+    float: left;
+    border: 1px solid #DDDDDD;
+    padding: 44px 0px 33px;
+    text-align: center;
+    margin: 46px 0px;
+    border-radius: 4px;
+}
+
+.premimum_content>p {
+    font-size: 18px;
+    color: #717171;
+    padding-top: 10px;
+}
+
+.premimum_content {
+    width: 100%;
+    float: left;
+    padding: 0px 54px;
+}
+
+button.primary_button {
+    background: #6D4243;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+    padding: 9px 17px;
+    border-radius: 4px;
+    font-family: 'PFHandbookPro-Regular';
+    float: right;
+}
+
+.form .margin-left {
+    margin-left: auto;
+}
+
+
+/* ********* ************ */
+/* The container */
+.input_left .CheckBoxItem {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    border: 1px solid #ddd;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transform: translateX(50%) translateY(50%);
+}
+
+/* Hide the browser's default checkbox */
+.input_left .CheckBoxItem input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+
+/* On mouse-over, add a grey background color */
+
+
+/* When the checkbox is checked, add a blue background */
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.input_left .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.input_left .CheckBoxItem input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.input_left .CheckBoxItem .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+label.CheckBoxItem.tobacco span {
+    top: 10px;
+}
+
+.icon-service.margin_top {
+    position: relative;
+    top: 2px;
+}
+
+/* ************* Term Insurance-calculator CSS End ************* */
+
+
+/* changes css start */
+.our_plans_main.category_Tab .plansDescription {
+    padding: 0px 13px;
+}
+
+.main.calculator .col-sm-12.col-md-8.col-lg-8 {
+    padding-left: 0px;
+}
+
+.main.calculator .row {
+    margin: 0px;
+}
+
+.col-xs-4.col-sm-4.col-md-4.col-lg-4.padding-left {
+    padding-right: 0px;
+}
+
+.form .row {
+    margin: 25px 0px 0px !important;
+}
+
+div#benefits .content {
+    box-shadow: none;
+}
+
+.column figcaption p.number::after {
+    width: 1px;
+    height: 42px;
+    background: #D7D9DA;
+    position: absolute;
+    left: 50%;
+    content: "";
+    top: -24px;
+    transform: translateY(-50%);
+}
+
+.column figcaption p.number {
+    padding-top: 25px;
+    position: relative;
+}
+
+.column:after {
+    width: 39px;
+    height: 38px;
+    background: #f7f7f7;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    top: 33px;
+    left: 201px;
+}
+
+.tab_circle {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    border: 6px solid #ddd;
+    top: 37px;
+    left: 207px;
+    z-index: 9999;
+}
+
+.our_plans_main ul.nav.nav-tabs li.nav-item.factor {
+    width: 21%;
+    border-bottom: 1px solid #ddd;
+}
+
+li.nav-item.second_tab {
+    width: 44% !important;
+
+}
+
+ul.nav.nav-tabs.term_proctection_tab>li.nav-item>a.nav-link {
+    border-right: 1px solid #ddd;
+}
+
+ul.nav.nav-tabs.term_proctection_tab>li.nav-item:last-child a {
+    border-right: 0px;
+}
+
+ul.nav.nav-tabs.term_proctection_tab {
+    border-bottom: 1px solid #ddd;
+    max-height: 50px;
+}
+
+ul.nav.nav-tabs.term_proctection_tab>li.nav-item:last-child a {
+    border: 0px;
+}
+
+.our_plans_main.our_article_tab a.nav-link.active.show {
+    background: #DA9089 !important;
+
+}
+
+.our_services.main.term-proctection .content {
+    border: 0px;
+    padding: 0px;
+}
+
+.our_services.main.article_main.article_category .view_all {
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+
+.our_services.main.term-proctection .content {
+    padding: 25px;
+    border: 0px;
+}
+
+.article.trending.detail_slider img {
+    position: relative;
+    left: 4px;
+    top: 3px;
+}
+
+/* ******** mobile show content css start ******** */
+.fixedmenu {
+    display: none;
+}
+
+.fixedmenu {
+    width: 100%;
+    float: left;
+    background: #da9089;
+}
+
+.fixedmenu>ul {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fixedmenu>ul>li {
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+.fixedmenu>ul>li>a i {
+    padding-right: 11px;
+}
+
+.fixedmenu>ul>li>a {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'PFHandbookPro-Regular';
+    display: inline-block;
+    padding: 11px 19px;
+    display: inline-block;
+    text-align: center;
+    position: relative
+}
+
+@media(max-width:998px) {
+
+    .term_insurace {
+        margin-top: 25px;
+    }
+
+    .BgGreyInMob {
+        background: #f7f7f7;
+    }
+
+    .no-padding-in-mob {
+        padding: 0 !important;
+    }
+
+    .main.calculator {
+        margin-top: 0;
+    }
+
+    .form {
+        padding: 10px !important;
+    }
+
+    .faq_home .view_all {
+        padding-top: 12px !important;
+    }
+
+    .column:after {
+        display: none;
+    }
+
+    .column figcaption {
+        margin-top: 20px !important;
+    }
+
+    .column figcaption p.number::after {
+        height: 30px;
+        top: 0;
+    }
+
+    .faq_home .card-body span {
+        display: none;
+    }
+
+    .insurance_left a.iconBg {
+        right: -18px;
+    }
+
+    .fixedmenu {
+        display: block;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .disclaimer_top p {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 17px 21px;
+    }
+
+    .our_services.main {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+
+    .our_services.main .col-sm-12.col-md-12.col-lg-9.insurance_left {
+        padding: 0px;
+    }
+
+    .disclaimer_top button i.fa {
+        float: right;
+        padding-top: 6px;
+        color: #252525 !important;
+    }
+
+    h3.mobile_show,
+    h1.mobile_show {
+        display: block !important;
+    }
+
+    .disclaimer_top.our_plans button.bg_primary h2,
+    .disclaimer_top.our_plans button.bg_primary h1 {
+        width: 80%;
+        float: left;
+    }
+
+    .features_row .features_column {
+        width: 100%;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .features_row .features_column {
+        width: calc(100% - 11px);
+        float: left;
+        border: 1px solid #F3F3F3;
+        padding-bottom: 31px;
+        border-radius: 4px;
+        text-align: left;
+        padding-left: 0px;
+        padding-right: 7px !important;
+    }
+
+    h5 {
+        font-size: 22px !important;
+    }
+
+    .features_row .features_column h5 {
+        padding-left: 27px;
+    }
+
+    .insurance_left .features_row .content.features_slider {
+        padding-right: 13px;
+        padding-left: 20px;
+        padding-top: 20px;
+        border: 0px;
+    }
+
+    .col-sm-12.col-md-12.col-lg-9.insurance_left .buy_onlineButton {
+        padding-left: 28px;
+        padding-top: 14px;
+    }
+
+    .features_row button.owl-prev {
+        left: -20px;
+    }
+
+    .features_row button.owl-next {
+        right: -32px;
+    }
+
+    /* ******* mobile categorty css start ******* */
+    .mobile_category_main {
+        background: #F7F7F7;
+        float: left;
+        width: 100%;
+        margin-top: 0px;
+        padding: 27px 25px;
+    }
+
+    .how_help.help_mobile .caption p {
+        padding: 0px;
+    }
+
+    .insurance_left .features_row .content.features_slider {
+
+        padding-bottom: 0px;
+    }
+
+    .mobile_category_main .card-header {
+        border: 0px;
+        text-align: left;
+        padding-left: 14px;
+        padding-bottom: 0px;
+        padding-top: 6px;
+        padding-right: 7px;
+    }
+
+    .mobile_category_main button.btn.btn-link {
+        background: transparent;
+        border-bottom: 0px;
+        text-align: left;
+        padding-left: 0px;
+        font-size: 17px;
+        color: #000000 !important;
+        white-space: normal;
+        padding-right: 0;
+    }
+
+    button.btn span {
+        font-size: 32px;
+        padding-right: 10px;
+
+    }
+
+    .category_mobile p {
+        font-size: 14px;
+        color: #252525;
+        font-family: 'PFEncoreSansPro';
+        line-height: 25px;
+    }
+
+    .category_mobile p strong {
+        font-size: 20px;
+        font-family: 'PFHandbookPro-Bold';
+    }
+
+    .our_plans_main.category_Tab {
+        display: none;
+    }
+
+    .our_services.main .col-sm-12.col-md-12.col-lg-3 {
+        display: none;
+    }
+
+    .disclaimer_top.our_plans .buy_onlineButton {
+        padding-left: 28px;
+    }
+
+    .category_mobile p>a {
+        font-family: 'PFHandbookPro-Bold';
+        color: #000;
+    }
+
+    .fixedmenu>ul>li>a::after {
+        position: absolute;
+        height: 31px;
+        content: "";
+        width: 1px;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 1px solid #B87974;
+    }
+
+    .category_mobile {
+        background: #fff;
+        padding: 14px;
+        margin-bottom: 14px;
+    }
+
+    .mobile_category_main .card-body {
+        background: #F7F7F7;
+    }
+
+    .mobile_category_main i.fa {
+        float: right;
+        background: #6D4243;
+        color: #fff;
+        text-align: center;
+        padding: 6px 10px;
+        border-radius: 4px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        font-size: 14px;
+    }
+
+    .mobile_category_main [data-toggle="collapse"] .fa:before {
+        content: "\f068";
+    }
+
+    .mobile_category_main [data-toggle="collapse"].collapsed .fa:before {
+        content: "\f067";
+    }
+
+    .our_services.main .disclaimer_top {
+        padding-top: 40px;
+    }
+
+    .our_services.main .disclaimer_top p {
+        margin-bottom: 0px;
+    }
+
+    .our_services.main .disclaimer_top {
+        padding-top: 0px;
+        margin-top: 35px;
+    }
+
+    .category_mobile p>a img {
+        vertical-align: middle;
+        top: -2px;
+        position: relative;
+        padding-left: 0px;
+        margin-left: -3px;
+    }
+
+    .mobile_category_main .card {
+        margin: 0px 0px 15px;
+    }
+
+    .mobile_category_main {
+        display: block !important;
+    }
+
+    .how_help.help_mobile .caption p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .how_help.help_mobile .caption p strong {
+        font-size: 20px;
+    }
+
+    .how_help.help_mobile {
+        background: #fff;
+        padding-top: 29px;
+        padding-bottom: 0px;
+    }
+
+    .how_help.help_mobile {
+        display: block;
+    }
+
+    .how_help {
+        display: none;
+    }
+
+    .how_help.help_mobile .inner_column .figure_images figure img {
+        width: 53px;
+    }
+
+    .features_row button.owl-next {
+        height: 61px;
+        border-radius: 0;
+    }
+
+    .features_row button.owl-prev {
+        height: 61px;
+    }
+
+    .how_help.help_mobile button.owl-next {
+        background: url(../images/prev.png) no-repeat !important;
+        width: 39px;
+        height: 61px;
+        position: absolute;
+        left: inherit;
+        top: 80px;
+        font-size: 0px !important;
+        right: -26px;
+        transform: rotate(180deg);
+    }
+
+    .our_services.main.article_detail .col-sm-12.col-md-12.col-lg-9.article_detail .content p {
+        font-size: 14px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+        padding-top: 0px;
+    }
+
+    .how_help.help_mobile .owl-nav.disabled {
+        display: block;
+    }
+
+    .how_help.help_mobile button.owl-prev {
+        background: url(../images/prev.png) no-repeat !important;
+        width: 48px;
+        height: 61px;
+        position: absolute;
+        left: -25px;
+        top: 80px;
+        font-size: 0px !important;
+    }
+
+    .how_help.help_mobile button span {
+        font-size: 0px;
+    }
+
+    h3 {
+
+        font-size: 25px !important;
+
+        padding: 0px 0 0;
+    }
+
+    .category_mobile ul>li:last-child {
+        padding-bottom: 0px;
+    }
+
+    .category_mobile ul {
+        list-style-type: disc;
+        color: #6d4243;
+        font-size: 22px;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 26px !important;
+        line-height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .category_mobile ul>li {
+        padding-bottom: 6px;
+    }
+
+    .article {
+        padding: 30px 0px;
+    }
+
+    .article_caption {
+
+        padding: 23px 0px !important;
+
+        background: #fff;
+    }
+
+    .category_mobile ul li>span {
+        font-size: 16px;
+        color: #717171;
+        font-family: 'PFHandbookPro-Regular';
+        position: relative;
+        top: -3px;
+    }
+
+    .articleSlider {
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+    /*faq css start */
+    .faq_home {
+        background: #fff;
+        padding: 30px 25px;
+    }
+
+    .faq_home .card-body {
+        border: 1px solid #ddd;
+        border-top: 0px;
+    }
+
+    .faq_home button.btn.btn-link {
+        border: 1px solid #ddd;
+        padding-top: 6px;
+        white-space: normal;
+        font-size: 18px;
+    }
+
+    .faq_home .collapseButton {
+        border: 0px;
+    }
+
+    .faq_home [data-toggle="collapse"] .fa:before {
+        content: "\f068";
+    }
+
+    .faq_home [data-toggle="collapse"].collapsed .fa:before {
+        content: "\f067";
+    }
+
+    button.btn span {
+        display: none;
+    }
+
+    .bottomMenu h3 {
+        text-align: left;
+        font-size: 18px !important;
+    }
+
+    .mobile_category_main.term_protections {
+        padding-bottom: 12px;
+    }
+
+    .mobile_category_main button.btn.btn-link span.tabHeading {
+        display: block;
+    }
+
+    .faq_home i.fa {
+        background: #6D4243;
+        color: #fff;
+        text-align: center;
+        padding: 7px 11px;
+        border-radius: 4px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-left: 9px;
+    }
+
+    .faq_home button#viewmore {
+        border: 0px;
+        padding: 12px 35px 11px 15px;
+        font-size: 14px;
+        width: 205px;
+        background-color: #6d4243;
+    }
+
+    .faq_home .view_all {
+        padding-top: 7px;
+        margin-bottom: 0px;
+    }
+
+    /* online plane css start */
+    .category_mobile .buy_plansTab .icon-service {
+        padding-top: 6px;
+    }
+
+    .category_mobile .buy_plansTab img {
+        width: 16px;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs {
+        background: transparent;
+        margin-bottom: 12px !important;
+        margin-left: 0px !important;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs li.nav-item {
+        float: left;
+        margin: 0px !important;
+        max-height: inherit !important;
+        margin-right: 3% !important;
+        width: 22%;
+    }
+
+    .buy_plansTab a.nav-link.active.show {
+        background-image: none !important;
+        padding: 0px !important;
+        border: 0px !important;
+    }
+
+    .column {
+        width: 100%;
+        float: left;
+        text-align: center;
+        position: relative;
+        z-index: 9;
+    }
+
+    .tab_circle {
+        display: none;
+    }
+
+    .category_mobile .buy_plansTab .icon-service {
+        padding-top: 6px;
+    }
+
+    .icon-service {
+        width: 47px;
+        height: 47px;
+        border: 6px solid #DA9089;
+    }
+
+    .category_mobile .buy_plansTab img {
+        width: 15px;
+    }
+
+    .category_mobile .buy_plansTab .icon-service {
+        padding-top: 3px;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs {
+        margin-left: 0px !important;
+    }
+
+    .buy_plansTab a.nav-link.active.show .icon-service {
+        border: 6px solid #6A4742;
+        margin-top: 2px;
+    }
+
+    .category_mobile .buy_plansTab .icon-service {
+        padding-top: 3px;
+        margin-left: 0px;
+        display: inline-block;
+    }
+
+    .column figcaption p {
+        font-size: 14px;
+        color: #494949;
+        font-family: 'PFHandbookPro-Regular';
+    }
+
+    .category_mobile .buy_plansTab a.nav-link {
+        padding: 0px !important;
+    }
+
+    .column figcaption p.number {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .category_mobile .container .plans_content p {
+        font-family: 'PFHandbookPro-Regular';
+    }
+
+    .column figcaption p.number {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .category_mobile .container {
+        padding: 0px;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs {
+        margin-bottom: 0px !important;
+    }
+
+    .our_plans_main.our_article_tab.artilce_tab_listing li.nav-item {
+        width: 100% !important;
+        float: left;
+    }
+
+    .our_plans_main.our_article_tab.artilce_tab_listing li.nav-item {
+        width: 100%;
+    }
+
+    .mobile_category_main button.btn.btn-link span.plane_heading {
+        display: inline-block;
+        font-size: 17px;
+        padding-top: 3px;
+        padding-right: 0px;
+    }
+
+    .our_plans_main.our_article_tab.artilce_tab_listing .owl-dots {
+        display: none;
+    }
+
+    .icon-service.margin_top {
+        top: 0px;
+    }
+
+    .our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item>a.nav-link {
+        font-size: 16px !important;
+        padding: 5px 8px !important;
+    }
+
+    .our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item {
+        min-height: auto;
+    }
+
+    
+
+    .mobile_category_main div#collapseThree .card-body {
+        padding: 0px !important;
+    }
+
+    .category_mobile .container .plans_content {
+        padding: 0px;
+    }
+
+    .category_mobile .container .plans_content p {
+        font-family: 'PFHandbookPro-Regular' !important;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs {
+
+        border: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .article.protection.onlineInsurance .article_full_row {
+        padding: 0;
+    }
+
+    .article_full_row .row.owl-carousel.article_slider {
+        margin: 0;
+    }
+
+    .article.protection.onlineInsurance button.owl-next {
+        right: 0px;
+        background: #402424;
+        width: 36px;
+        top: 0;
+    }
+
+    .article.protection.onlineInsurance button.owl-prev {
+        left: 0;
+        width: 36px;
+    }
+
+    .mobile_category_main .category_mobile {
+        padding-bottom: 2px;
+    }
+
+    .column figcaption p {
+        margin: 0px;
+    }
+
+    .buy_plansTab ul.nav.nav-tabs .tab_line {
+        top: 30px;
+        left: 8%;
+    }
+
+    /********* term proctection css start ********** */
+    .disclaimer_top button {
+        border-left: 7px solid #6D4243;
+    }
+
+    .our_services .col-lg-9 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .our_services.main.term-proctection .content {
+        border: 1px solid #ddd;
+        border-top: 0px;
+        padding: 15px;
+    }
+
+    .displayNone {
+        display: none;
+    }
+
+    .disclaimer_top button {
+        border-left: 7px solid #6D4243;
+        border-top-right-radius: 4px;
+        padding: 11px 13px;
+    }
+
+    .mobile_features_plan.disclaimer_top button {
+        background: #DA9089;
+        color: #fff !important;
+        border: 0px;
+    }
+
+    .mobile_features_plan.disclaimer_top button h2,
+    .mobile_features_plan.disclaimer_top button h1 {
+        color: #fff !important;
+        font-family: 'PFHandbookPro-Regular' !important;
+    }
+
+    .mobile_features_plan.disclaimer_top i.fa {
+        color: #fff !important;
+        padding-top: 3px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column p {
+        padding-right: 40px;
+        font-size: 16px;
+    }
+
+    .our_services.main .disclaimer_top .features_column {
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+
+    .buyButton {
+        font-size: 16px;
+        padding: 8px 37px 5px 15px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column .buy_onlineButton {
+        padding-top: 16px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column {
+        padding-bottom: 22px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column p a {
+        font-size: 15px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column p {
+        padding-right: 40px;
+        font-size: 15px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column {
+        padding-bottom: 22px;
+    }
+
+    .borderedButton {
+        padding: 6px 37px 5px 15px;
+    }
+
+    .our_services.main .disclaimer_top .features_column:last-child {
+        margin-bottom: 0px;
+    }
+
+    .mobile_features_plan.disclaimer_top .features_column h5 {
+        font-size: 18px !important;
+    }
+
+    .mobile_category_main.term_protections {
+        margin-top: 30px;
+    }
+
+    /********* term proctection css start ********** */
+    span.tabHeading {
+        font-size: 17px !important;
+        width: 80%;
+        float: left;
+    }
+
+    .mobile_category_main.term_protections i.fa {
+        float: right;
+        display: inline-block;
+    }
+
+    .mobile_category_main.term_protections .card-header {
+        padding-left: 12px;
+        padding-right: 7px;
+    }
+
+    div#termheadingOne i.fa {
+        margin-top: 0px;
+    }
+
+    .how_help h3 {
+
+        font-size: 24px !important;
+
+        padding-bottom: 26px;
+
+    }
+
+    .how_help.help_mobile.term_procetection p {
+        padding: 0px;
+    }
+
+    .article_caption>p {
+        font-size: 14px;
+        padding: 0px 15px;
+        margin-bottom: 10px;
+    }
+
+    .article .view_detail p.border-left {
+        padding-left: 8px !important;
+    }
+
+    .article .view_detail p {
+        font-size: 11px !important;
+    }
+
+    .figure_Area a.share img {
+        width: 19px;
+        margin: 0px !important;
+        padding: 0px !important;
+        text-align: center;
+        padding-top: 0px !important;
+        position: relative;
+        top: 0px;
+        display: inline-block;
+    }
+
+    .view_detail {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .view_all a.buyButton {
+        width: 191px;
+        padding: 15px 35px 7px 15px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .view_all {
+        margin-bottom: 0px !important;
+    }
+
+    .inner_column {
+        margin-bottom: 4px;
+    }
+
+    .article h3 {
+        padding-bottom: 25px;
+    }
+
+    .article_caption p strong {
+
+        font-size: 18px;
+
+    }
+
+    .article_caption {
+
+        background: #fff;
+        padding-bottom: 10px !important;
+    }
+
+    .our_services.main .col-sm-12.col-md-3.col-lg-3 {
+        display: none;
+    }
+
+    .article.mobileShow {
+        display: block !important;
+        background: #fff;
+        padding-bottom: 10px;
+    }
+
+
+    .article .view_detail p {
+        font-size: 12px !important;
+    }
+
+    /* article category html start */
+    .our_services.main.article_main.article_category .leftsection button.bg_primary {
+        padding: 11px 12px;
+        background: #F7F7F7;
+    }
+
+    .our_services.main.article_detail {
+        margin-top: 40px;
+    }
+
+    .our_services.main.article_detail .article_heading_area h2,
+    .our_services.main.article_detail .article_heading_area h1 {
+        margin-top: 35px;
+    }
+
+    .our_services.main.article_detail .article_heading_area .view_detail {
+        padding-left: 0px;
+    }
+
+    .our_services.main.article_detail .article_heading_area .view_detail {
+        padding-left: 0px;
+    }
+
+    .view_detail p {
+        font-size: 12px;
+    }
+
+    .our_services.main.article_detail a.buyButton {
+        width: 248px;/*	DP4389 | Added By Pushkar*/
+    }
+
+    .article.trending.detail_slider {
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .article.trending .article_caption p {
+        font-size: 15px;
+    }
+
+    .article.trending .article_caption p strong {
+        font-size: 20px;
+    }
+
+    .article.trending.detail_slider button.owl-next {
+        right: -46px;
+    }
+
+    .article.trending.detail_slider button.owl-prev.disabled {
+        left: -34px;
+    }
+
+    .our_services.main.article_detail .article_heading_area {
+        padding-left: 16px;
+    }
+
+    .left_main .content p {
+
+        margin-bottom: 15px;
+    }
+
+    .article.trending.detail_slider a.buyButton {
+        width: 182px;
+        background-position: 92%;
+    }
+
+    .our_services.main.article_detail .article_heading_area h2,
+    .our_services.main.article_detail .article_heading_area h1 {
+        font-size: 22px !important;
+    }
+
+    .our_services.main.article_detail .content {
+        padding: 17px 13px;
+    }
+
+    .left_main .content p {
+        font-size: 12px;
+        padding-top: 9px;
+        padding-left: 30px;
+    }
+
+    .main.calculator .col-sm-12.col-md-8.col-lg-8 {
+        padding: 0px 0;
+    }
+
+    .term_insurace h3.mobile_show,
+    .term_insurace h1.mobile_show {
+        padding: 10px 15px;
+        font-size: 20px !important;
+        text-align: left;
+    }
+
+    .mobile_banner {
+        display: block !important;
+    }
+
+    .step>p {
+        font-size: 14px;
+    }
+
+    .step>p span {
+        font-size: 20px;
+
+        top: -3px;
+
+    }
+
+    /* article category html end */
+
+    /* *********** calculator css start *********** */
+
+    .form {
+        width: 100%;
+        float: left;
+        border: 1px solid #ddd;
+        border-top: 0px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    .main.calculator .row {
+        margin: 0px;
+    }
+
+    .form .row {
+        margin: 0px 0px 11px !important;
+    }
+
+    .form .form-control {
+        height: 35px;
+        font-family: 'PFHandbookPro-Regular';
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+    }
+
+    .form .form-control {
+        font-size: 15px;
+    }
+
+    select.form-control {
+        height: 35px !important;
+    }
+
+    button.primary_button {
+        font-size: 14px;
+        padding: 7px 17px;
+        float: left;
+        margin-top: 8px;
+    }
+
+    .form label {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+        padding-left: 0px !important;
+    }
+
+    .form .row .col-lg-3 label {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .form input.form-control.rupees {
+        background: url(../images/rupees.png) no-repeat #F9F9F9;
+        background-position: 3%;
+        padding-left: 28px;
+        background-size: 10px;
+    }
+
+    .right_sideBar>p.heretext {
+        font-size: 21px;
+        padding-bottom: 20px;
+    }
+
+    .right_sideBar .content_main {
+        position: relative;
+    }
+
+    .premimum_content h2,
+    .premimum_content h1 {
+        font-size: 22px !important;
+    }
+
+    .premimum_content h2,
+    .premimum_content h1 {
+        font-size: 22px !important;
+    }
+
+    .col-xs-4.col-sm-4.col-md-4.col-lg-4.padding-left {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .right_Side>p {
+        font-size: 12px;
+        padding-top: 11px;
+        padding-left: 26px;
+
+
+    }
+
+    .premimum {
+        width: calc(100% - 32px);
+        margin: 30px 15px 30px;
+        padding: 20px 0px 1px;
+    }
+
+    .premimum_content>p {
+        font-size: 14px;
+        color: #717171;
+        padding-top: 10px;
+    }
+
+    .right_sideBar>p {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'PFHandbookPro-Regular';
+        line-height: 26px;
+        padding-right: 47px;
+    }
+
+    select.form-control:focus {
+        box-shadow: none;
+        border-color: #D0D0D0;
+    }
+
+    .input_left {
+        width: auto;
+        margin-top: 5px;
+        margin-right: 18px;
+    }
+
+    .labelText {
+        width: auto;
+        padding-top: 14px;
+        text-align: center;
+        float: left;
+        padding-left: 5px;
+    }
+
+
+    /* *********** calculator css ended *********** */
+    .form {
+        width: 100%;
+        float: left;
+        border: 1px solid #ddd;
+        border-top: 0px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .right_sideBar {
+        background: #DA9089;
+        float: left;
+        border-radius: 4px;
+        padding: 15px 15px 15px;
+        padding-right: 10px;
+    }
+
+    .premimum_content {
+        padding: 0px 0px;
+    }
+
+    .disclaimer_top.our_plans.features button.bg_primary {
+        border-left: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .disclaimer_top.our_plans.features p {
+        padding: 0px 0px 0px 26px;
+    }
+
+    .article_Tab .owl-nav.disabled button {
+        background: #6D4243 !important;
+        width: 25px;
+        border-radius: 50%;
+        height: 26px;
+        color: #fff !important;
+        font-size: 29px !important;
+        line-height: 0px !important;
+        margin: 0px;
+        position: absolute !important;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .article_Tab .owl-nav.disabled button.owl-prev {
+        left: -25px;
+    }
+
+    .article_Tab .owl-nav.disabled button.owl-next {
+        right: -23px !important;
+    }
+
+    .article_tab_content {
+        width: 100%;
+        float: left;
+    }
+
+    .article_Tab .owl-nav.disabled button span {
+        line-height: 0px;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        top: -4px;
+    }
+
+    .article_Tab .owl-nav.disabled {
+        display: block !important;
+    }
+
+}
+
+/* desktop view css sart */
+.article.mobileShow {
+    display: none;
+}
+
+.mobile_banner {
+    display: none;
+}
+
+/* desktop view css end */
+/* ******** mobile show content css End ******** */
+
+
+.our_plans_main.category_Tab.online_plans ul.nav.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq_home .view_all {
+    padding-top: 30px;
+}
+
+div#benefits .content {
+    border: 0px;
+    padding: 0px;
+}
+
+.purcase_plans .buy_plansTab ul.nav.nav-tabs {
+    border: 0px !important;
+}
+
+.article.protection.onlineInsurance .view_all {
+    margin-top: 0px;
+    margin-bottom: 46px;
+}
+
+span.saving {
+    position: relative;
+    left: 10px;
+}
+
+.disclaimer_top.our_plans.features.plans_text .features_column {
+    padding-left: 0px;
+    margin-bottom: 10px;
+}
+
+.faq a.primaryButton {
+    width: 100%;
+    border: 0px !important;
+    outline: 0px;
+    background: #6a4742;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0px;
+    text-align: left;
+    padding: 7px 12px 7px 20px;
+    border-radius: 4px;
+    font-family: 'PFHandbookPro-Regular';
+    margin-bottom: 10px;
+}
+
+.our_plans_main.category_Tab.online_plans .plansDescription p {
+    font-family: PFHandbookPro-Regular;
+}
+
+.our_plans_main.category_Tab.online_plans .plansDescription .content {
+    border: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+.mobile_features_plan.disclaimer_top {
+    display: none;
+}
+
+h3.mobile_show,
+h1.mobile_show {
+    display: none;
+}
+
+
+
+.fixedmenu>ul>li:first-child>a::after {
+    display: none;
+}
+
+
+
+/******* Mobile Category Slider Start *******/
+
+ul.CustomTabHeaders {
+    padding: 0 30px;
+}
+
+.CustomTabHeaders .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0px;
+    z-index: 0;
+    left: 0;
+}
+
+.CustomTabHeaders a.nav-link {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-family: PFHandbookPro-Regular;
+}
+
+.CustomTabHeaders a.nav-link.active {
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #DA9089;
+}
+
+.CustomTabHeaders .owl-stage-outer {
+    z-index: 9;
+    border-bottom: 1px solid #DA9089;
+}
+
+.CustomTabHeaders .owl-nav button span {
+    float: left;
+    width: 100%;
+    height: 7px !important;
+    line-height: 0;
+}
+
+.CustomTabHeaders .owl-nav button {
+    background: #6D4243 !important;
+    color: #fff !important;
+    width: 25px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 24px !important;
+    transform: translateY(-50%);
+}
+
+.CustomTabHeaders .owl-nav button.owl-next {
+    float: right;
+}
+
+.CustomTabContainers .TabItem {
+    display: none;
+}
+
+.CustomTabContainers .TabItem.active {
+    display: block;
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+.CustomTabContainers .TabItem .article_full_row {
+    padding: 0;
+    background: #fff;
+}
+
+.CustomTabContainers .TabItem .row.owl-carousel.article_slider {
+    padding: 0 10px;
+}
+
+.CustomTabContainers .owl-nav button {
+    width: 20px !important;
+    background-size: 100% !important;
+    height: 32px;
+    border-radius: 0;
+}
+
+.CustomTabHeaders .owl-stage {
+    position: relative;
+    display: inline-flex;
+}
+
+.CustomTabHeaders .owl-stage li.nav-item {
+    top: 100%;
+    position: relative;
+    transform: translateY(-100%);
+    list-style-type: none;
+}
+
+.owl-nav button {
+    border-radius: 0;
+}
+
+.article.protection.onlineInsurance.no-margin {
+    padding-top: 22px;
+}
+
+
+
+/******* Mobile Category Slider Ended *******/
+
+
+
+/******** Sticky Header Css Start *******/
+
+.middleMenu.sticky {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.fixedmenu.sticky {
+    position: fixed;
+    top: 95px;
+    z-index: 998;
+}
+
+/******** Sticky Header Css Ended *******/
+
+
+
+/******* Calculator Css Start *********/
+
+.calculator .form {
+    border: 1px solid #DDDDDD;
+    padding: 24px;
+    border-top: none;
+}
+
+.form input.ErrorZone {
+    border-color: #6d4243;
+}
+
+.ErrorMsg img {
+    float: left;
+    width: 13px;
+    position: relative;
+    top: 6px;
+    margin-right: 4px;
+}
+
+.ErrorMsg {
+    color: #6c7174;
+    font-family: 'PFHandbookPro-Regular';
+    float: left;
+    width: 100%;
+}
+
+.primary_button img {
+    position: relative;
+    top: -1px;
+    margin-left: 10px;
+}
+
+@media all and (min-width: 999px) {
+
+    .no-padding {
+        padding: 0 !important;
+    }
+}
+
+.remove-pad-right {
+    padding-right: 0 !important;
+}
+
+.bottomMenu a:focus {
+    outline: none;
+}
+
+/******* Calculator Css Ended *********/
+
+
+
+
+
+
+
+
+.input-group-text {
+    background: #eee;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    font-family: 'PFHandbookPro-Regular';
+}
+
+.input-group input.form-control {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+
+
+
+
+/************* Responsiveness 1024px Start *****************/
+
+
+@media all and (min-width: 999px) and (max-width: 1198px) {
+
+    .rightSide a.nav-link {
+        padding: 8px 5px !important;
+    }
+
+    ul.nav.nav-tabs li {
+        width: 30%;
+    }
+
+    .disclaimer_top.important_link button.bg_primary {
+        font-size: 22px;
+    }
+
+    .important_link .content a {
+        font-size: 16px;
+        padding-left: 27px;
+    }
+
+    .important_link .content a {
+        font-size: 16px;
+    }
+
+    .rightSide p {
+        font-size: 14px !important;
+        line-height: 16px;
+        padding-left: 0;
+    }
+
+    .caption p {
+        padding: 0 10px;
+    }
+
+    .our_plans_main ul.nav.nav-tabs li.nav-item a {
+        font-size: 16px !important;
+    }
+
+    .our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item {
+        min-height: 52px;
+    }
+
+    .article_heading_area h2,
+    .article_heading_area h1 {
+        padding-top: 50px;
+    }
+
+    .bottomMenu h3 {
+        position: relative;
+        left: 52px;
+
+        font-size: 18px !important;
+        margin-top: 5px;
+    }
+
+    .tagling p {
+        margin-left: 107px !important;
+    }
+
+    .main-menu>.navbar-nav {
+        margin-left: 26px !important;
+    }
+
+    .our_services.main.article_main .our_plans_main ul.nav.nav-tabs li.nav-item a {
+        font-size: 14px !important;
+        line-height: 21px;
+    }
+
+    .primaryButton {
+        font-size: 15px;
+    }
+
+    .track button.primaryButton {
+        width: 100%;
+        line-height: 27px;
+    }
+
+
+}
+
+
+@media all and (min-width: 1399px) {
+
+    .bottomMenu h3 {
+        margin-left: 33px;
+    }
+
+    .tagling p {
+        margin-left: 80px;
+    }
+
+    .main-menu>.navbar-nav {
+        margin-left: 122px !important; /*Changes by Girwar 08-07-2019*/
+    }
+
+    .pay.dropdown {
+        margin-right: -15px;
+    }
+
+}
+
+
+/************* Responsiveness 1024px Ended *****************/
+
+
+.form select.form-control {
+    -webkit-appearance: none;
+    background-image: url(../images/down-icon.png);
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+select.form-control {
+    box-shadow: none !important;
+    border-color: #D0D0D0 !important;
+}
+
+.p-menus .active a.nav-link {
+    border-bottom: 1px solid #fff;
+}
+.article_full_row {
+    margin-bottom: 30px;
+}
+ul.content-list-item > li {
+    color: #6d4243;
+    position: relative;
+    list-style-type: none;
+}
+ul.content-list-item > li::after {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    content: "";
+    background: #6d4243;
+    border-radius: 50%;
+    margin-left: -20px;
+}
+@media(max-width:767px){
+    ul.content-list-item > li::after {
+       
+        top: 7px;
+        
+        margin-left: -22px;
+    }
+}
+
+/* 10 january css start */
+ul.content-list-item > li ul.content-list-sub-item {
+    padding-left: 17px;
+}
+ul.content-list-item > li ul.content-list-sub-item > li {
+    list-style-type: decimal;
+    color: #717171;
+}
+h2.calculatorheading {
+    padding-top: 20px;
+}
+p.insuracle_padding-left {
+    text-align: left;
+}
+p.insuracle_padding-left b {
+    color: #252525;
+}
+
+@media(max-width:998px){
+    .mobile_category_main .category_mobile> p, .mobile_category_main .category_mobile> h5 {
+        padding-left: 25px;
+    }
+    ul.content-list-item > li > p b {
+        font-size: 14px;
+    }
+    ul.content-list-item  {
+        list-style-type: none;
+    }
+    ul.content-list-item > li ul.content-list-sub-item > li {
+        color: #717171 !important;
+        font-size: 14px;
+    }
+}
+ul.nav.nav-tabs.no-padding-left {
+    padding-left: 0px;
+}
+a.primary_color {
+    color: #6a4742 !important;
+}
+
+
+@media(max-width:999px){
+    .content.border h5.content_heading {
+        padding-top: 15px;
+    }
+}
+/* 10 january css end */
+
+/* 16 JAUNUARY CSS CSS CHANGES START */
+.rightSide ul.nav.nav-tabs>li.nav-item a.nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff !important;
+    /* background: transparent !important; */
+    border-bottom: 2px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+.dailyNav {
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+/* 16 JAUNUARY CSS CSS CHANGES END */
+
+/*Class Added By Pushkar for Hover | START*/
+    .dropdown__hover:hover .dropdown__submenu--hover {
+        display: block!important;
+    }
+
+    .dropdown__hover:hover .dropdown__sub--menu--hover {
+        display:block!important;
+    }
+    .more-submenu__hover:hover .dropdown__subsub--menu--hover {
+        display:block!important;
+    }
+
+    /*
+    Class name for online plan: dropdown__hover
+    class name for Sub menu in Online Plan: dropdown__submenu--hover
+    */
+    /*Class Added By Pushkar for Hover | END*/
+a.link-home{
+               padding: 0;
+               color: #fff;
+}
+
+a.link-home:hover{
+               background-color: transparent!important; /*DP4389*/
+               color: #fff;
+               cursor: pointer;
+}
+
+/*Pushkar Changes STARTs here*/
+/*body #s4-workspace {
+    overflow: visible !important;
+}*/
+
+.s4-search { 
+    display: none;
+}
+
+.s4-ca {
+    margin: 0px !important;
+}
+
+#site_header, #footer_main {
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+a.dropdown-toggle {
+    color: #fff !important; 
+}
+
+.bottomMenu a:hover, .bottomMenu a[aria-expanded="true"] {
+    background: #F2F3F6;
+    color: #000 !important;
+}
+
+.footerTop ul>li>a {
+    line-height: 1.428571 !important;
+}
+
+ul.social_icons>li>a {
+    text-align: center;
+    line-height: 30px !important;
+}
+
+.article_caption a.read_more {
+    color: #6D4243!important;
+    font-weight: bold;
+}
+/*Load More DP4389 */
+.load__article{
+     display: none;
+}
+/*DP4401 - Added for Customer Service Menu | START*/
+@media screen and (min-width: 1024px) and (max-width: 1292px)  {
+    .more-hide {
+        display: block;
+    }
+	.customer-hide{
+		display: none;
+	}
+}
+@media screen and (min-width: 1292px) and (max-width: 5000px) {
+    .more-hide {
+        display: none;
+    }
+	.customer-hide{
+		display: block;
+	}
+}
+/*DP4401 - Added for Customer Service Menu | END*/
+
+/*DP4428 - Added for Register Menu | START */
+@media screen and (min-width: 1000px) and (max-width: 1124px)  {
+    .register-more-hide {
+        display: block;
+    }
+	.register-hide{
+		display: none;
+	}
+}
+    	@media screen and (min-width: 1000px) and (max-width: 1023px)  {
+    .more-hide {
+        display: block;
+    }
+	.customer-hide{
+		display: none;
+	}
+}
+@media screen and (min-width: 1130px) and (max-width: 5000px)  {
+    .register-more-hide {
+        display: none;
+    }
+	.register-hide{
+		display: block;
+	}
+}
+/*DP4428 - Added for Register Menu | END */

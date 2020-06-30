@@ -1,0 +1,698 @@
+strong {
+  font-family: "PFHandbookPro-Bold";
+}
+.bg_white {
+  background-color: white;
+}
+.img_center {
+  text-align: center;
+}
+
+.img_center img {
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}
+.congImg {
+  width: 30%;
+}
+
+._page {
+  display: block;
+  width: 100% !important;
+  height: auto;
+  min-height: 460px;
+  font-family: "PFHandbookPro-Regular";
+  background: url(../images/bg/ab_pc.jpg);
+  background-repeat: NO-REPEAT;
+  background-size: cover;
+  /*    background-attachment: fixed;*/
+  position: relative;
+  overflow-x: 0;
+  overflow-y: hidden;
+}
+
+.ab_wrapper {
+  /* display: block;
+    position: relative; */
+  width: 100%;
+}
+
+.ab_banner {
+  display: none;
+  /* width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1; */
+}
+.ab_banner > picture {
+  width: 100vw;
+  height: 43.22vw;
+}
+.ab_banner > picture > img {
+  width: 100vw;
+  height: 43.22vw;
+}
+
+.puchke_form {
+  z-index: 2;
+  /*	overflow-y: scroll;*/
+  width: 56.25vw;
+  height: 100%;
+  margin: 0 auto;
+  /*    position: relative;*/
+  /*    top: 0;*/
+  /*    left: 29.16vw;*/
+  color: #232323;
+  padding: 3.1vw 8.06vw;
+  background-color: rgba(251, 251, 252, 0.9);
+}
+
+.puchke_form_header_desktop {
+  width: 100%;
+  display: block;
+  font-family: "PFHandbookPro-Bold";
+  font-size: 2.2vw;
+  text-align: center;
+  color: #ca1f34 !important;
+  /* background-color: #fbfbfc; */
+  padding: 0 0 1rem 0;
+  letter-spacing: 2px;
+}
+.puchke_form_header {
+  width: 100%;
+  text-align: center;
+  background-color: #ca1f34;
+  color: #fbfbfc;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: "PFHandbookPro-Bold";
+  letter-spacing: 1px;
+}
+
+.puchke_form_header_mobile {
+  width: 100%;
+  display: none;
+  text-align: center;
+  background-color: #ca1f34;
+  color: #fbfbfc;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: "PFHandbookPro-Bold";
+}
+
+.puchke_form_subheader {
+  padding: 0 4% 1rem 4%;
+  font-family: "PFHandbookPro-Bold";
+  text-align: center;
+  color: #676767 !important;
+  font-size: 1.8vw;
+  margin-bottom: 0rem;
+  letter-spacing: 1px;
+}
+
+.ab_subhead_text {
+  font-size: 2.4vw;
+}
+
+.indented {
+  margin-left: 2.1vw;
+}
+
+.puchke_form_input {
+  min-height: 3vw;
+  background-color: rgba(253, 253, 253, 0.92);
+  height: auto;
+  display: -ms-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px #fff solid;
+  -ms-flex-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 3vw;
+  margin: 0.5rem 0;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 0.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.label_section {
+  width: 100%;
+  /* font-size: 1.1vw; */
+  font-size: 18px;
+}
+
+.input_section {
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  flex-direction: column;
+}
+
+.input_text {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #343434;
+  font-family: "PFHandbookPro-Bold";
+  font-size: 1.1vw;
+  width: 100%;
+}
+
+.input_section input::placeholder {
+  color: #ccc;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 1.1vw;
+}
+
+a:focus {
+  outline: none;
+}
+
+.radio_container {
+  font-size: 1.1vw;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: end;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  color: #b1b1b1;
+}
+
+.orange {
+  display: -ms-flexbox;
+  -ms-flex-pack: justify;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: center;
+}
+
+.puchke_form_submit {
+  background-color: #6a4742 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6vw;
+  letter-spacing: 4px;
+  font-family: "PFHandbookPro-Bold";
+  width: 24vw;
+  align-self: center;
+  margin: 2vw auto 0 auto;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.error {
+  border-bottom: 1px solid #ca1f34;
+}
+
+.ab_tenure_duration_text {
+  font-size: 0.9vw;
+}
+
+.ab_tenure_months_text {
+  font-size: 1.13vw;
+}
+
+.input_section select {
+  font-family: "PFHandbookPro-Bold";
+  cursor: pointer;
+  /* color: #343434; */
+  color: #b1b1b1;
+  font-size: 1.2vw;
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align-last: right;
+  position: relative;
+}
+
+.input_section option {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.13vw;
+  background: transparent;
+  background-color: #ccc;
+  padding: 0.2vw 1vw;
+  cursor: pointer;
+  color: #343434;
+  border-bottom: 1px solid #565656;
+}
+
+.orange {
+  -ms-flex-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.puchke_form .radio_container {
+  margin-right: 1vw;
+  position: relative;
+  padding-left: 2vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 1.3vw;
+  width: 1.3vw;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.radio_container .checkmark:after {
+  /* top: .48vw;
+    left: .48vw;
+    width: .4vw;
+    height: .4vw; */
+  top: 0.38vw;
+  left: 0.38vw;
+  width: 0.6vw;
+  height: 0.6vw;
+  border-radius: 50%;
+  background: #343434;
+}
+.radio_container:hover input ~ .checkmark {
+  background-color: #bbb;
+}
+.radio_container input:checked ~ .checkmark {
+  background-color: #ccc;
+}
+.radio_container input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+}
+.radio_container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio_container {
+  white-space: nowrap;
+}
+
+.slidecontainer {
+  width: 100%;
+  border-bottom: none;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 1rem 0.5rem;
+}
+
+.slide_wrap {
+  width: 100%;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.range_marker {
+  padding: 0.3rem 0;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.1vw;
+  position: relative;
+}
+.range_marker_lbl {
+  width: auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  position: relative;
+  height: 5px;
+  background: #ababac;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 2.5px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: rgba(195, 41, 57, 1);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: rgba(195, 41, 57, 1);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.range_hover {
+  position: absolute;
+  right: 0.5em;
+  top: 0.8em;
+}
+
+.vdo_aditya {
+  display: block;
+  width: 100%;
+}
+
+.congrats_wrap {
+  font-family: "pf_handbook_proregular";
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  padding: 3rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  border: 0 solid #d4ac0d;
+  background-color: white;
+}
+
+.congrats {
+  color: rgba(202, 31, 52, 0.9);
+  text-align: center;
+  font-size: 2.5vw;
+  /* font-weight: 900; */
+  /* padding-bottom: 1rem; */
+  font-family: "PFHandbookPro-Bold";
+}
+
+.congrats_wrap > p {
+  padding: 1.5rem 0;
+  font-size: 1.9vw;
+  line-height: 1.6;
+  color: rgba(63, 63, 63, 0.9);
+}
+
+.tenure_length,
+.emi_amount,
+.loan_amount {
+  font-size: 1.5vw;
+  font-weight: 600;
+  /* color: #D4AC0D; */
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+  right: -7px;
+}
+
+.noUi-target {
+  box-shadow: none;
+  background-color: #b1b1b1;
+}
+
+.noUi-connect {
+  background-color: #b73432;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: #b73432;
+  border-radius: 50%;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle::before,
+.noUi-horizontal .noUi-handle::after {
+  display: none;
+}
+
+.form input.ErrorZone {
+  border-color: #6d4243;
+}
+
+.ErrorMsg img {
+  float: left;
+  width: 13px;
+  position: relative;
+  top: 6px;
+  margin-right: 4px;
+}
+
+.ErrorMsg {
+  color: #6c7174;
+  font-family: "PFHandbookPro-Regular";
+  float: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .w50 {
+    width: 50%;
+  }
+  .congImg {
+    width: 100%;
+  }
+  ._page {
+    background: none;
+  }
+
+  .ab_banner {
+    display: block;
+    border: 10px solid #ca1f34;
+  }
+  .ab_banner > picture,
+  .ab_banner > picture > img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .puchke_form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: auto;
+    padding-bottom: 3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .puchke_form_header_mobile {
+    width: 100%;
+    display: none;
+    font-weight: 600;
+    text-align: center;
+    background-color: #ca1f34;
+    color: #fbfbfc !important;
+    padding: 1rem 0;
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .puchke_form_header_desktop {
+    display: none;
+  }
+
+  .puchke_form_subheader {
+    font-size: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .ab_subhead_text {
+    font-size: 1.05rem;
+  }
+
+  .puchke_form_input {
+    margin: 1rem 0;
+    min-height: 2.5rem;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label_section {
+    width: auto;
+    /* font-size: .75rem; */
+    font-size: 13px;
+  }
+
+  .input_text {
+    font-size: 18px;
+    padding: 0.5rem 0.3rem;
+    max-width: 100%;
+    background: #f9f9f9;
+  }
+
+  .ab_tenure_duration_text {
+    font-size: 0.6rem;
+  }
+
+  .ab_tenure_months_text {
+    font-size: 0.75rem;
+  }
+
+  .input_section input::placeholder {
+    font-size: 0.65rem;
+  }
+
+  .radio_container {
+    font-size: 15px;
+    color: #b1b1b1;
+    font-family: "PFHandbookPro-Bold";
+  }
+
+  .input_section select {
+    right: 0;
+    /* font-size: .8rem; */
+    font-size: 18px;
+  }
+
+  .input_section option {
+    font-size: 0.75rem;
+  }
+
+  .puchke_form_submit {
+    width: 70vw;
+    font-size: 1.1rem;
+    margin: 2rem auto 1rem auto;
+  }
+
+  .puchke_form .radio_container {
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .checkmark {
+    /* height: .65rem;
+        width: .65rem; */
+    height: 15px;
+    width: 15px;
+  }
+
+  .radio_container .checkmark:after {
+    /*  top: .24rem;
+        left: .24rem;
+        width: .2rem;
+        height: .2rem; */
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+  }
+
+  .range_hover {
+    font-size: 1rem;
+    top: 1rem;
+    font-family: "PFHandbookPro-Bold";
+  }
+
+  .range_marker {
+    font-size: 0.7rem;
+  }
+
+  .congrats_wrap {
+    height: auto;
+    min-height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0;
+  }
+
+  .congrats {
+    font-size: 32px;
+    line-height: 1.2;
+    padding-bottom: 0;
+  }
+
+  .congrats_wrap > p {
+    text-align: center;
+    font-size: 23px;
+    line-height: 1.6;
+    color: #3f3f3f;
+  }
+
+  .tenure_length,
+  .emi_amount,
+  .loan_amount {
+    font-size: 23px;
+  }
+
+  .range_marker_lbl {
+    width: auto;
+    font-size: 1rem;
+  }
+
+  .ErrorMsg {
+    font-size: 14px;
+  }
+
+  .ErrorMsg img {
+    width: 11px;
+    top: 5px;
+  }
+}
+
+/**  STYLE 1 */
+/*
+#style-2::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+#style-2::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+#style-2::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}*/

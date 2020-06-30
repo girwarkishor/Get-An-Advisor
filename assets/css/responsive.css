@@ -1,0 +1,819 @@
+@media(max-width:1243px) and (min-width:1201px){
+    .link-home h3 {
+        font-size: 24px!important; 
+    }
+}
+
+@media(max-width:1205px) and (min-width: 1201px){
+	.login-btn{
+		margin-top: 50px;
+	}
+	.login-btn a{
+		font-size: 16px;
+	}
+	.main-menu a{
+		font-size: 16px;
+	}
+}
+
+@media(max-width:1200px){
+    .container{
+      max-width:992px
+      
+    }
+    .middleMenu a.navbar-brand img {
+        width: 150px;
+        height: 45px;
+        margin: 8px 65px 7px auto;
+        height: auto; 
+		}
+	.login-btn{
+		margin-top: 50px;
+	}
+	.login-btn a{
+		font-size: 16px;
+	}
+	.main-menu a{
+		font-size: 16px;
+	}
+	
+	.topmenu ul>li>a{
+		font-size: 12px;
+	}
+.socIcon.float-right ul > li > a {
+    
+    font-size: 18px;
+}
+.footerTop ul > li > a {
+    font-size: 15px;
+}
+
+.login {
+    margin-left: auto;
+    margin-top: 33px;
+}
+.middleMenu ul.navbar-nav {
+    padding-top: 33px;
+}
+.bottomMenu h3 {
+    margin-left: 30px;
+    font-size: 24px !important;
+    line-height: 1;
+}
+ul.menu {
+    margin-left: 34px !important;
+}
+.tagling p {
+   
+    font-size: 16px;
+   
+    margin-left: 30px;
+   
+    padding: 3px 0px;
+}
+.pay.dropdown {
+    width: 127px;
+    text-align: right;
+}
+nav.navbar.navbar-expand-md.navbar-dark {
+    padding-right: 0px;
+}
+ul.menu {
+    margin-left: 15px !important;
+}
+.bottomMenu a {
+    
+    font-size: 16px;
+    
+/*    padding: 14px 10px;*/
+    
+}
+	
+	.link-home h3{
+		font-size: 22px!important;
+	}
+.servinceContent ul.nav.nav-tabs > li > a.nav-link {
+    height: 137px;
+    
+    /* padding-top: 16px; */
+}
+.servinceContent ul.nav.nav-tabs > li {
+  
+    max-height: 137px;
+}
+.servinceContent ul.nav.nav-tabs > li > a.nav-link img {
+    width: 40px;
+}
+.servinceContent .tab-content p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.rightSide h2 {
+    font-size: 21px;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    font-family: "PFHandbookPro-Regular";
+}
+.rightSide p {
+    
+    font-size: 16px;
+    
+}
+.track a {
+    
+    font-size: 14px;
+}
+.rightSide a.nav-link {
+   
+    font-size: 13px;
+   
+}
+.servinceContent ul.nav.nav-tabs > li > a.nav-link p {
+  
+    font-size: 15px;
+}
+.servinceContent ul.nav.nav-tabs > li > a.nav-link.active {
+   
+    height: 140px;
+}
+.servinceContent h4 {
+   
+    font-size: 21px;
+   
+}
+.row.protectionDetail a.know-more img {
+    padding-left: 5px;
+}
+.attention a span {
+    font-size: 16px !important;
+}
+.moreDeatils {
+    
+    font-size: 15px;
+   
+}
+.beware {
+   
+    font-size: 15px;
+   
+}
+.row.footerMidlde p {
+    font-size: 15px !important;
+}
+.beware p {
+    margin-bottom: 7px;
+}
+ul.bottomLink > li > a {
+   
+    font-size: 15px;
+}
+.row.copyright p {
+    text-align: left;
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+}
+.footerBottom {
+   
+    padding: 35px 20px 23px;
+}
+.rightSide form label {
+    margin: 0px;
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+    margin-left: 10px;
+    font-size: 14px;
+}
+}
+
+@media(max-width:1072px) and (min-width: 998px){
+	.login-btn{
+		margin-top: 50px;
+	}
+	.login-btn a{
+		font-size: 14px;
+	}
+	.main-menu a{
+		font-size: 14px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	
+	.bottomMenu h3 {
+    margin-left: 30px;
+    font-size: 20px !important;
+    line-height: 1;
+	}
+	.bottomMenu a {
+    font-size: 15px;
+	padding-left: 12px;
+	padding-right: 12px;
+	}
+}
+
+@media(max-width:998px){
+
+    .wrapper {
+        padding: 0;
+    }
+    .our_services {
+        padding: 0;
+    }
+    .hide-me-in-mob{
+        display:none;
+    }
+    .servinceContent .nav-tabs {
+        width: 100%;
+        white-space: nowrap;
+        display: inline-block !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-top: 25px !important;
+    }
+    .servinceContent ul.nav.nav-tabs > li {
+        width: 21%;
+        float: none;
+        display: inline-block;
+    }
+    .middleMenu a.nav-link {
+        text-align: center;
+    }
+    .middleMenu li.nav-item.active a {
+        border: none;
+        padding: 6px 0;
+        line-height: normal;
+        background: rgba(0,0,0,0.1);
+    }
+    
+    .login.dropdown {
+        text-align: center;
+    }
+    .login.dropdown a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        display: block;
+    }
+    .container {
+        max-width: 750px !important;
+    }
+    .middleMenu {
+        padding: 0px 0px;
+    }
+    .bottomMenu h3 {
+        margin-left: 0px;
+        font-size: 16px !important;
+        margin-top: 5px;
+    }
+    ul.menu {
+        margin-left: 0px !important;
+    }
+    .pay.dropdown > a {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .bottomMenu {
+       
+        max-height: 45px;
+    }
+/*
+    .bottomMenu a {
+       
+        padding: 14px 4px;
+    }
+*/
+    .tagling p {
+        font-size: 14px;
+        margin-left: 0PX;
+        padding: 0;
+    }
+    .middleMenu nav.navbar.navbar-expand-lg.navbar-dark {
+        padding-right: 15px;
+    }
+    .servinceContent {
+        margin-bottom: 35px;
+    }
+    .servinceContent ul.nav.nav-tabs > li {
+       
+        max-height: 100%;
+    }
+    .servinceContent ul.nav.nav-tabs > li > a.nav-link {
+        height: auto !important;
+        padding: 15px 0px;
+        height: 100%;
+    }
+    .servinceContent ul.nav.nav-tabs > li > a.nav-link p {
+        font-size: 15px;
+        min-height: 0;
+        white-space: normal;
+    }
+    .servinceContent ul.nav.nav-tabs > li > a.nav-link img {
+        width: 40px;
+        max-height: 50px;
+        min-height: 50px;
+    }
+    .dailyNav {
+        width: 100%;
+        max-width: 100% !important;
+        margin-top: 9px;
+    }
+    .track a {
+        font-size: 16px;
+    }
+    .footerTop .col-lg-2 {
+        margin-bottom: 45px;
+    }
+    .row.footerMidlde {
+        margin-top: 0px;
+    }
+    .moreDeatils {
+        
+        padding: 13px 0px;
+    }
+    .row.footerMidlde p {
+        font-size: 15px !important;
+        
+    }
+    .row.footerMidlde p {
+        font-size: 15px !important;
+        text-align: left !important;
+    }
+    .contacttext.float-left {
+        margin-left: 0px;
+    }
+    .float-right {
+       
+        float: left !important;
+    }
+    .track img {
+        max-width: 250px;
+    }
+    .track .collapse {
+      
+        position: relative;
+        z-index: 999;
+        background: #fff;
+    }
+    .track {
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media(max-width:998px) and (min-width:768px){
+    .attention {
+        margin-top: 0;
+        padding-top: 0; 
+    }
+}
+
+@media(max-width:767px){
+    .servinceContent ul.nav.nav-tabs > li > a.nav-link p {
+        margin: 0;
+    }
+    .container {
+        width: 100% !important;
+    }
+    .servinceContent ul.nav.nav-tabs > li {
+        width: 28%;
+    }
+    .servinceContent ul.nav.nav-tabs > li > a.nav-link.active {
+        border-bottom-color: #fff;
+    }
+    .protectionDetailPadding {
+        text-align: center;
+    }
+    .row.protectionDetail {
+        padding: 15px 0px;
+    }
+    .rightSide {
+       
+        padding: 0px 15px;
+    }
+    .attention {
+        margin: 0px 0px 0px;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .track img {
+        width: 100%;
+    }
+    ul.social_icons {
+        border: 0px;
+        top: 0px;
+        position: static;
+        padding: 0px 0px;
+    }
+    ul.social_icons > li {
+        
+        margin-top: 10px;
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    .socIcon.float-right ul > li {
+        padding: 0 8px;
+        float: left;
+        margin-top: 10px;
+    }
+    .socIcon.float-right ul {
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+    .float-right {
+        float: right!important;
+        width: 100% !important;
+        float: left !important;
+    }
+    .contacttext.float-left {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .topmenu ul > li > a {
+        
+        padding: 0 5px 0 4px;
+        font-size: 12px;
+        
+    }
+    .middleMenu a.navbar-brand img {
+        width: 110px;
+      
+        margin: 0px;
+       
+    }
+    .col-lg-4.protectionDetailPadding p {
+       
+        padding-bottom: 0px;
+    }
+    .beware {
+        
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .row.protectionDetail a {
+        
+        margin-top: 0px;
+        padding: 6px 0px;
+    }
+    .col-sm-12.col-md-4.col-lg-4.protectionDetailPadding a.meetadvisor {
+        margin-top: 5px;
+    }
+    
+    .footerTop .col-lg-2 {
+        margin-bottom: 30px;
+    }
+   
+    .login.dropdown a {
+       
+        padding-left: 10px;
+    }
+    .login.dropdown {
+        padding: 0px 15px;
+        margin-top: 0px;
+    }
+    .attention a:hover {
+        text-decoration: none;
+        border: 0px;
+    }
+   
+    /* over css start */
+/*.clearfix {
+    width: 100%;
+    white-space: nowrap;
+}
+servinceContent ul.nav.nav-tabs > li {
+     width: 33.33%; 
+    width: auto;
+    display: inline-block;
+    float: none;
+}
+*/
+/* over flow css end */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/************GUIDELINES FOLLOWING START**************/
+
+
+
+
+@media all and (max-width: 998px){
+	
+	.link-home h3 {
+    font-size: 22px!important;
+}
+	
+	
+
+    .hide-me-mob{
+        display: none;
+    }
+    .hide-me-web{
+        display: inline-block;
+    }
+    .topmenu {
+        display: none;
+    }
+    .login-btn > p {
+        display: none;
+    }
+    .login-btn {
+        font-size: 0;
+        margin-top: 35px;
+    }
+    .toggle-btn {
+        margin-top: 35px;
+        margin-left: 20px;
+        float: right;
+    }
+    .login-btn span:before {
+        font-size: 20px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .mobile-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .mobile-menu.active .menu-overlay {
+        opacity: 0.8;
+    }
+    .mobile-menu.active .menu-container {
+        transform: translate(0);
+    }
+    .menu-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .menu-container {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #ffffff;
+        width: 100%;
+        overflow: scroll;
+        transition: all 0.3s ease;
+        max-width: 412px;
+        transform: translateX(100%);
+    }
+	
+	.menu-container>.menu-header>.logo-sec>img{
+		width: 230px;
+    	height: 62px;
+	}
+	
+    .menu-header {
+        float: left;
+        width: 100%;
+        padding: 20px;
+		background-color: #c72229;
+    }
+    .logo-sec {
+        float: left;
+		max-width: 160px;
+    }
+    .logo-sec > img {
+        width: 100%;
+    }
+    .mobile-menu .toggle-btn {
+        position: relative;
+        margin: 10px 0 0 0;
+    }
+	
+	.menu-container .mob-top-images{
+		background-color: #c72229;
+		padding-bottom: 1em;
+	}
+	
+	.menu-container .mob-top-images>a{
+		padding: 1px 48px 10px;
+    	border-right: 1px solid #999;
+    	text-decoration: none;
+	}
+	
+	.menu-container .mob-top-images>a>img{
+		width: 21px!important;
+		height: auto;
+	}
+	
+	.menu-container .mobCard {
+	padding-left: 20px;
+	padding-top: 30px;
+	background-color: #ffffff;}
+	.menu-container .mobCard ul {
+	list-style-type: none; }
+	.menu-container .mobCard ul li {
+	margin: 0px; }
+	.menu-container .mobCard ul li h3 {
+	font-family: 'pf_handbook_probold';
+	font-size: 28px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.14;
+	letter-spacing: normal;
+	text-align: left;
+	margin-bottom: 14px; }
+	.menu-container .mobCard ul li ul {
+	padding: 0px;
+	margin: 0px; }
+	.menu-container .mobCard ul li ul li a {
+	float: left;
+	font-family: 'pf_handbook_proregular';
+	width: 50%;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #444749!important;
+	margin-top: 0px;
+	margin-bottom: 10px; }
+	.menu-container .mobCard .marginBT {
+	margin-bottom: 35px; }
+	.menu-container .mobCard .protectingHd {
+	color: #da9089!important; }
+	.menu-container .mobCard .investingHd {
+	color: #969f6e!important; }
+	.menu-container .mobCard .financeHd {
+	color: #d4ae69!important; }
+	.menu-container .mobCard .advisingHd {
+	color: #c7222a!important; }
+	
+    .menu-body {
+        float: left;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+		background-color: #ffffff;
+		color: #444749 !important;
+    }
+	
+	.menu-body ul li a{
+		font-family: 'PFHandbookPro-Regular';
+		font-size: 20px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.27;
+		letter-spacing: normal;
+		color: #444749 !important;
+		display: block;
+		margin-top: 15px;
+	}
+	
+	.menu-body ul .mob-footer{
+		font-family: 'PFEncoreSansPro';
+		margin-top: 98px;
+		width: 234px;
+		font-size: 16px;
+		color: #444749;
+	}
+    .p-menus {
+        float: left;
+        width: 100%;
+    }
+    .p-menus > li {
+        float: left;
+        width: 100%;
+    }
+	.p-menus a.nav-link {
+		text-align: left;
+		margin-bottom: 24px;
+		padding: 0;
+		line-height: normal;
+		font-size: 28px;
+		display: inline-block;
+	}
+    .p-menus {
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .p-btn {
+        float: left;
+        width: 100%;
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        color: #fff;
+        font-size: 28px;
+        line-height: normal;
+    }
+    ul.s-menu {
+        float: left;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+    .s-menu a {
+        font-size: 22px;
+        color: #fff;
+        font-family: 'PFHandbookPro-Regular';
+        line-height: normal;
+        margin-bottom: 14px;
+        display: inline-block;
+    }
+    .menu-footer {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 10px;
+        font-family: PFEncoreSansPro-Regular;
+    }
+    .p-btn span:before {
+        font-size: 20px;
+    }
+    .row.borderLine {
+        display: none;
+    }
+    .logo-sc {
+        float: left;
+        width: auto;
+    }
+    .row.foterRow {
+        float: left;
+        margin-right: 64px;
+    }
+    .row.copyright {
+        position: relative;
+        top: 4px;
+    }
+    .row.copyright p {
+        font-size: 12px;
+    }
+    .col-lg-4.protectionDetailPadding p {
+        padding-bottom: 0px;
+        float: none;
+        display: inline;
+    }
+    .row.protectionDetail i {
+        float: none;
+        top: 0;
+    }
+
+}
+
+
+@media all and (max-width: 600px){
+
+    .servinceContent .nav-tabs {
+        margin-top: 5px !important;
+    }
+    .servinceContent .tab-content {
+        margin-top: 0;
+    }
+
+    .row.copyright {
+        float: left;
+    }
+    .row.foterRow {
+        width: 100%;
+    }
+    .track img {
+        margin-bottom: 5px;
+    }
+}
+
+
+/************GUIDELINES FOLLOWING ENDED**************/
+
+@media(max-width:661px) and (min-width:576px){
+    .link-home h3 {
+    font-size: 18px!important;
+}
+}
