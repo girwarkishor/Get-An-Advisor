@@ -411,44 +411,50 @@
                   <h3 class="puchke_form_subheader">
                     Just fill in a few details.
                   </h3>
-                  <div class="puchke_form_input indented">
-                    <label class="label_section" for="">Name: </label>
-                    <div class="input_section">
-                      <input
-                        class="input_text"
-                        type="text"
-                        id="Name"
-                        placeholder="Enter Name"
-                      />
+                  <form id="puchke">
+                    <div class="puchke_form_input indented">
+                      <label class="label_section" for="">Name: </label>
+                      <div class="input_section">
+                        <input
+                          class="input_text"
+                          type="text"
+                          name="Name"
+                          id="Name"
+                          placeholder="Enter Name"
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="puchke_form_input indented">
-                    <label class="label_section" for="">Mobile Number: </label>
-                    <div class="input_section">
-                      <input
-                        class="input_text"
-                        maxlength="10"
-                        type="text"
-                        id="MobileNumber"
-                        placeholder="10-digit Mobile No."
-                        required
-                      />
+                    <div class="puchke_form_input indented">
+                      <label class="label_section" for=""
+                        >Mobile Number:
+                      </label>
+                      <div class="input_section">
+                        <input
+                          class="input_text"
+                          maxlength="10"
+                          type="text"
+                          name="MobileNumber"
+                          id="MobileNumber"
+                          placeholder="10-digit Mobile No."
+                          required
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="puchke_form_input indented">
-                    <label class="label_section" for="">Email: </label>
-                    <div class="input_section">
-                      <input
-                        class="input_text"
-                        type="Email"
-                        id="EmailAddress"
-                        placeholder="Enter Email Id"
-                      />
+                    <div class="puchke_form_input indented">
+                      <label class="label_section" for="">Email: </label>
+                      <div class="input_section">
+                        <input
+                          class="input_text"
+                          type="text"
+                          name="EmailAddress"
+                          id="EmailAddress"
+                          placeholder="Enter Email Id"
+                        />
+                      </div>
                     </div>
-                  </div>
-
+                  </form>
                   <!-- <div class="puchke_form_input">
 							<label class="label_section"  for="">Choose your city: </label>
 							<div class="input_section w50">
@@ -1291,6 +1297,7 @@
     <!-- owl carousel  js -->
     <script src="assets/js/owl.carousel.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
 
     <script src="assets/js/custom.js"></script>
     <script>

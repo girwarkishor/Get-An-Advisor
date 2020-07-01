@@ -222,9 +222,9 @@ a:focus {
   padding: 0.5rem 0;
 }
 
-.error {
+/* .error {
   border-bottom: 1px solid #ca1f34;
-}
+} */
 
 .ab_tenure_duration_text {
   font-size: 0.9vw;
@@ -478,7 +478,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ErrorMsg {
-  color: #6c7174;
+  color: #ca1f34;
   font-family: "PFHandbookPro-Regular";
   float: left;
   width: 100%;

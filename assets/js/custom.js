@@ -1,215 +1,104 @@
-// online plans
-$(function () {
-  function isValidEmailAddress(emailAddress) {
-    var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
-    return pattern.test(emailAddress);
-  }
-
-  function isValidPhoneNumber(num) {
-    var phoneno = /^\d{10}$/;
-    if (num.match(phoneno)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  $(".DateOfBirth").datepicker({
-    dateFormat: "dd/mm/yy",
-    changeMonth: !0,
-    changeYear: !0,
-  });
-
-  $("#SubmitTheForm").click(function () {
-    var inputs = ["Name", "MobileNumber", "EmailAddress"];
-
-    // var RadioButtons = ["Gender", "Smoker"];
-
-    for (var i in inputs) {
-      var element = $("#" + inputs[i]);
-      if (element.val() == "") {
-        console.log(element.siblings(".ErrorMsg").length);
-        if (element.siblings(".ErrorMsg").length == 0) {
-          element.after(
-            '<div class="ErrorMsg"><img src="assets/images/warning.svg">This field is required*</div>'
-          );
-          element.addClass("ErrorZone");
-          element.change(function () {
-            if ($(this).val() != "") {
-              $(this).parents().children(".ErrorMsg").slideUp().remove();
-              $(this).removeClass("ErrorZone");
-            }
-          });
-        }
-        element.focus();
-        return false;
+// Restricts input for the given textbox to the given inputFilter.
+function setInputFilter(textbox, inputFilter) {
+  [
+    "input",
+    "keydown",
+    "keyup",
+    "mousedown",
+    "mouseup",
+    "select",
+    "contextmenu",
+    "drop",
+  ].forEach(function (event) {
+    textbox.addEventListener(event, function () {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
       }
-
-      if (inputs[i] == "EmailAddress" && !isValidEmailAddress(element.val())) {
-        if (element.siblings(".ErrorMsg").length == 0) {
-          element.after(
-            '<div class="ErrorMsg"><img src="assets/images/warning.svg">Please enter a valid Email Address*</div>'
-          );
-          element.addClass("ErrorZone");
-          element.keyup(function () {
-            if ($(this).val() != "") {
-              $(this).parents().children(".ErrorMsg").slideUp().remove();
-              $(this).removeClass("ErrorZone");
-            }
-          });
-        }
-        element.focus();
-        return false;
-      }
-
-      if (inputs[i] == "MobileNumber" && !isValidPhoneNumber(element.val())) {
-        if (element.siblings(".ErrorMsg").length == 0) {
-          element.after(
-            '<div class="ErrorMsg"><img src="assets/images/warning.svg">Please enter a valid Mobile Number*</div>'
-          );
-          element.addClass("ErrorZone");
-          element.keyup(function () {
-            if ($(this).val() != "") {
-              $(this).parents().children(".ErrorMsg").slideUp().remove();
-              $(this).removeClass("ErrorZone");
-            }
-          });
-        }
-        element.focus();
-        return false;
-      }
-    }
-
-    // for (var i in RadioButtons) {
-    //   console.log($("." + RadioButtons[i] + ":checked").val());
-    //   if (!$("." + RadioButtons[i] + ":checked").val()) {
-    //     if (
-    //       $("." + RadioButtons[i])
-    //         .parents(".ItemsContainer")
-    //         .children(".ErrorMsg").length == 0
-    //     ) {
-    //       $("." + RadioButtons[i])
-    //         .parents(".ItemsContainer")
-    //         .append('<div class="ErrorMsg">This field is required*</div>');
-    //       $("." + RadioButtons[i])
-    //         .parents("label")
-    //         .click(function () {
-    //           $(this).siblings(".ErrorMsg").slideUp();
-    //         });
-    //     }
-    //     return false;
-    //   }
-    // }
+    });
   });
-
-  $(window).scroll(function () {
-    if ($(window).width() < 998) {
-      var top = $(window).scrollTop();
-      if (top > 100) {
-        $(".middleMenu").addClass("sticky");
-        $(".fixedmenu").addClass("sticky");
-      } else {
-        $(".middleMenu").removeClass("sticky");
-        $(".fixedmenu").removeClass("sticky");
-      }
-    } else {
-      $(".middleMenu").removeClass("sticky");
-      $(".fixedmenu").removeClass("sticky");
-    }
-  });
-
-  var owl = $(".features_slider");
-  owl.owlCarousel({
-    items: 3,
-    loop: true,
-    margin: 10,
-    autoplay: false,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-        autoplay: false,
-      },
-      1200: {
-        items: 3,
-        nav: false,
-      },
-      768: {
-        items: 2,
-        nav: false,
-      },
-    },
-  });
-
-  $(".CustomTabHeaders").owlCarousel({
-    items: 2,
-    loop: true,
-    autoPlay: false,
-    nav: true,
-  });
+}
+setInputFilter(document.getElementById("MobileNumber"), function (value) {
+  return /^\d*$/.test(value);
+});
+setInputFilter(document.getElementById("Name"), function (value) {
+  return /^[a-zA-Z ]*$/.test(value);
 });
 
-// FAQ JS START
-
-$(function () {
-  var owl = $(".article_slider");
-  owl.owlCarousel({
-    items: 3,
-    loop: true,
-    margin: 10,
-    autoplay: false,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-        autoplay: false,
-      },
-      1200: {
-        items: 3,
-        nav: false,
-      },
-      768: {
-        items: 2,
-        nav: false,
-      },
-    },
-  });
-});
+//Validations
 
 $(document).ready(function () {
-  $("#viewmore").click(function () {
-    $(".more_faq").toggle("slow");
+  jQuery.validator.addMethod("regex", function (value, element, regexp) {
+    var re = new RegExp(regexp);
+    return this.optional(element) || re.test(value);
   });
-});
+  jQuery.validator.addMethod(
+    "emailExt",
+    function (value, element, param) {
+      return value.match(
+        /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/
+      );
+    },
+    "Please enter valid email id"
+  );
+  $("#puchke").validate({
+    rules: {
+      Name: {
+        required: true,
+        regex: "^[a-zA-Z ]*$",
+      },
+      MobileNumber: {
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+        number: true,
+        regex: "^[6789][0-9]{9}",
+      },
 
-// HOW Aditiya Birla Help
-
-$(function () {
-  var owl = $(".processing_slider");
-  owl.owlCarousel({
-    items: 1,
-    autoplay: false,
-    loop: true,
-    margin: 15,
-    autoplayTimeout: 2000,
-  });
-});
-
-// article papge article tab carousel js
-$(function () {
-  var owl = $(".article_Tab");
-  owl.owlCarousel({
-    items: 3,
-    loop: true,
-    margin: 10,
-    autoplay: false,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
+      EmailAddress: {
+        required: true,
+        emailExt: true,
+      },
+    },
+    messages: {
+      Name: {
+        required: "Please enter your name",
+        regex: "Please enter valid name",
+      },
+      MobileNumber: {
+        required: "Please enter mobile number",
+        digits: "Please enter valid mobile number",
+        maxlength: "Please enter valid mobile number",
+        minlength: "Please enter valid mobile number",
+        number: "Please enter numerical character only!",
+        regex: "Mobile number is not valid!",
+      },
+      EmailAddress: {
+        required: "Please enter email id",
+        regex: "Please enter valid email id",
+      },
+    },
+    onfocusout: function (element) {
+      $(element).valid();
+    },
+    errorElement: "small",
+    errorPlacement: function (error, element) {
+      error.addClass("ErrorMsg");
+      if (element.prop("type") === "checkbox") {
+        error.insertAfter(element.next("label"));
+      } else {
+        error.insertAfter(element);
+      }
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).addClass("is-valid").removeClass("is-invalid");
+    },
   });
 });
