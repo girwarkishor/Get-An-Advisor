@@ -411,7 +411,7 @@
                   <h3 class="puchke_form_subheader">
                     Just fill in a few details.
                   </h3>
-                  <form id="puchke">
+                  <form id="puchke" method="get">
                     <div class="puchke_form_input indented">
                       <label class="label_section" for="">Name: </label>
                       <div class="input_section">
@@ -421,6 +421,7 @@
                           name="Name"
                           id="Name"
                           placeholder="Enter Name"
+                          required
                         />
                       </div>
                     </div>
@@ -447,14 +448,15 @@
                       <div class="input_section">
                         <input
                           class="input_text"
-                          type="text"
+                          type="email"
                           name="EmailAddress"
                           id="EmailAddress"
                           placeholder="Enter Email Id"
+                          required
                         />
                       </div>
                     </div>
-                  </form>
+                  
                   <!-- <div class="puchke_form_input">
 							<label class="label_section"  for="">Choose your city: </label>
 							<div class="input_section w50">
@@ -1110,7 +1112,7 @@
                     />
                   </a>
                 </div>
-
+              </form>
                 <!-- <div class="congrats_wrap">
 						<h4 class="congrats">Congratulations!</h4>
 						<p>
