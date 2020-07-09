@@ -415,7 +415,7 @@ a:focus {
 .congrats {
   color: rgba(202, 31, 52, 0.9) !important;
   text-align: center;
-  font-size: 2.5vw !important;
+  font-size: 2.5vw;
   font-family: "PFHandbookPro-Bold" !important;
 }
 
