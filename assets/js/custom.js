@@ -82,6 +82,13 @@ $(document).ready(function () {
         regex: "Please enter valid email id",
       },
     },
+    submitHandler: function (form) {
+      $(".ab_wrapper").addClass("d-none");
+      $(".congrats_wrap").removeClass("d-none");
+      setTimeout(function () {
+        form.submit();
+      }, 3000);
+    },
     onfocusout: function (element) {
       $(element).valid();
     },
